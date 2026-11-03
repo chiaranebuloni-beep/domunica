@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ristrutturazione e Trattamento Termico Interno | DomUnica Roma</title>
+<meta name="description" content="Ristrutturazione e trattamento termico interno nanotecnologico in soli 2 mm. Sopralluogo gratuito a Roma, analisi con termocamera, cantiere pulito e qualsiasi colore.">
+<link rel="icon" href="https://domunica.it/wp-content/uploads/2023/07/Logo___Domunica.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #06c12e;
+    --green-dark: #04a527;
+    --green-soft: #f4faf6;
+    --green-tint: rgba(6, 193, 46, .1);
+    --navy: #1d2b64;
+    --ink: #1f1f25;
+    --muted: #74787c;
+    --line: #e7ebe8;
+    --bg: #ffffff;
+    --radius: 14px;
+    --shadow: 0 6px 24px rgba(31, 31, 37, .06);
+    --shadow-hover: 0 10px 30px rgba(31, 31, 37, .1);
+    --wrap: 1200px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+  body { margin: 0; background: var(--bg); color: var(--muted); font: 400 16px/1.65 Exo, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  h1, h2, h3, h4 { font-family: Exo, sans-serif; color: var(--ink); margin: 0; line-height: 1.15; letter-spacing: -.02em; }
+  h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 700; }
+  h3 { font-size: 21px; font-weight: 700; }
+  p { margin: 0; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
+  section { padding: 96px 0; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; font: 700 13px/1 Exo, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--green-dark); margin-bottom: 14px; }
+  .eyebrow b { background: var(--green); color: #fff; padding: 5px 8px; border-radius: 4px; }
+  .lead { font-size: 18px; max-width: 640px; margin-top: 16px; }
+  .head { margin-bottom: 48px; }
+  .head.center { text-align: center; }
+  .head.center .lead { margin-left: auto; margin-right: auto; }
+
+  /* Bottoni */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 15px 26px; border-radius: 8px; font: 700 15px/1 Exo, sans-serif; text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: background .2s, color .2s, transform .2s, box-shadow .2s; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-primary { background: var(--green); color: #fff; }
+  .btn-primary:hover { background: var(--green-dark); transform: translateY(-1px); box-shadow: 0 8px 20px rgba(6, 193, 46, .25); }
+  .btn-ghost { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .7); }
+  .btn-ghost:hover { background: #fff; color: var(--ink); }
+  .btn-outline { background: #fff; color: var(--ink); border-color: var(--line); }
+  .btn-outline:hover { border-color: var(--green); color: var(--green-dark); }
+
+  /* Header sempre visibile */
+  .topbar { background: var(--green); color: #fff; font-size: 14px; }
+  .topbar .wrap { display: flex; gap: 24px; align-items: center; height: 38px; }
+  .topbar a { text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+  .topbar svg { width: 14px; height: 14px; }
+  .topbar .push { margin-left: auto; }
+  header.site { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, .96); backdrop-filter: blur(8px); box-shadow: 0 1px 0 var(--line); }
+  header.site .wrap { display: flex; align-items: center; gap: 32px; height: 76px; }
+  .logo img { height: 46px; width: auto; }
+  nav.main { display: flex; gap: 28px; margin-left: auto; }
+  nav.main a { text-decoration: none; color: var(--ink); font-weight: 600; font-size: 15px; }
+  nav.main a:hover { color: var(--green-dark); }
+  header.site .btn { padding: 12px 20px; }
+
+  /* Hero */
+  .hero { position: relative; padding: 64px 0 120px; overflow: hidden; background: linear-gradient(160deg, var(--green-soft) 0%, #fff 65%); }
+  .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: center; }
+  .hero-visual { position: relative; margin: 0; max-width: 500px; justify-self: end; width: 100%; }
+  .hero-visual .frame { border-radius: 22px; overflow: hidden; box-shadow: 0 24px 60px rgba(29, 43, 100, .16); }
+  .hero-visual img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; transform-origin: 80% 50%; animation: kenburns 18s ease-out both; }
+  .float { position: absolute; background: #fff; border-radius: 14px; padding: 14px 18px; box-shadow: var(--shadow-hover); animation: bob 5s ease-in-out infinite; }
+  .float.f1 { left: -32px; bottom: 56px; text-align: center; }
+  .float.f1 strong { display: block; font: 800 34px/1 Exo, sans-serif; color: var(--green); }
+  .float.f1 span { font-size: 13px; font-weight: 600; color: var(--ink); }
+  .float.f2 { right: -20px; top: 36px; display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 14px; color: var(--ink); animation-delay: -2.5s; }
+  .float .dot { width: 34px; height: 34px; border-radius: 50%; background: var(--green-tint); color: var(--green-dark); display: grid; place-items: center; }
+  .float .dot svg { width: 18px; height: 18px; }
+  .hero h1 { font-size: clamp(32px, 4.2vw, 52px); font-weight: 800; max-width: 620px; }
+  .hero h1 .big { display: block; font-size: 2.1em; line-height: .95; color: var(--green); letter-spacing: -.04em; margin-bottom: 10px; }
+  .hero h1 em { font-style: normal; color: var(--navy); }
+  .hero p.lead strong { color: var(--ink); }
+  .hero p.lead { font-size: 18px; max-width: 560px; margin-top: 22px; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px; }
+  .chip { display: inline-flex; align-items: center; gap: 8px; background: #fff; border: 1px solid var(--line); padding: 8px 14px; border-radius: 99px; font-size: 14px; font-weight: 600; color: var(--ink); box-shadow: 0 2px 8px rgba(31, 31, 37, .04); }
+  .chip svg { width: 16px; height: 16px; color: var(--green); }
+
+  /* Numeri */
+  .stats { padding: 0; position: relative; z-index: 2; margin-top: -56px; }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+  .stat { padding: 28px 26px; border-right: 1px solid var(--line); }
+  .stat:last-child { border-right: 0; }
+  .stat strong { display: block; font: 800 34px/1 Exo, sans-serif; color: var(--navy); letter-spacing: -.02em; }
+  .stat strong b { font-weight: inherit; font-variant-numeric: tabular-nums; }
+  .stat strong span { color: var(--green); }
+  .stat p { margin-top: 8px; font-size: 15px; }
+
+  /* Offerta: sopralluogo + termocamera */
+  .offer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .offer { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow .25s, transform .25s; border: 1px solid var(--line); }
+  .offer:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
+  .offer-img { aspect-ratio: 16 / 9; background-size: cover; background-position: center; position: relative; }
+  .tag { position: absolute; top: 16px; left: 16px; font: 700 13px/1 Exo, sans-serif; letter-spacing: .06em; text-transform: uppercase; padding: 8px 12px; border-radius: 6px; }
+  .tag.free { background: var(--green); color: #fff; }
+  .offer-img.thermo { overflow: hidden; background: #2b0f6b; cursor: crosshair; touch-action: pan-y; user-select: none; }
+  .thermo canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .th-cursor { position: absolute; left: 10%; top: 16%; z-index: 2; pointer-events: none; transition: left 1s cubic-bezier(.4, 0, .2, 1), top 1s cubic-bezier(.4, 0, .2, 1); }
+  .thermo.live .th-cursor { transition: none; }
+  .th-cursor i { position: absolute; left: -18px; top: -18px; width: 36px; height: 36px; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 0 1px rgba(0, 0, 0, .2); }
+  .th-cursor i::before, .th-cursor i::after { content: ""; position: absolute; background: #fff; }
+  .th-cursor i::before { left: 15px; top: -10px; width: 2px; height: 52px; background: linear-gradient(#fff 0 22%, transparent 22% 78%, #fff 78%); }
+  .th-cursor i::after { top: 15px; left: -10px; height: 2px; width: 52px; background: linear-gradient(90deg, #fff 0 22%, transparent 22% 78%, #fff 78%); }
+  .th-read { position: absolute; left: 28px; top: -24px; white-space: nowrap; background: rgba(10, 14, 40, .84); color: #fff; border-radius: 9px; padding: 7px 12px; box-shadow: 0 6px 18px rgba(0, 0, 0, .25); }
+  .th-cursor.flip .th-read { left: auto; right: 28px; }
+  .th-cursor.up .th-read { top: -74px; }
+  .th-read b { display: block; font: 800 19px/1.1 Exo, sans-serif; font-variant-numeric: tabular-nums; }
+  .th-read span { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; margin-top: 2px; }
+  .th-read span::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--dot, #fff); }
+  .th-cursor[data-state="cold"] { --dot: #5aa8ff; }
+  .th-cursor[data-state="cool"] { --dot: #c38bff; }
+  .th-cursor[data-state="ok"] { --dot: var(--green); }
+  .th-cursor[data-state="hot"] { --dot: #ffc23d; }
+  .th-scale { position: absolute; right: 14px; top: 14px; bottom: 14px; display: flex; flex-direction: column; align-items: center; gap: 6px; color: #fff; font-size: 11px; font-weight: 700; pointer-events: none; }
+  .th-scale i { flex: 1; width: 10px; border-radius: 5px; background: linear-gradient(to top, #0a0730, #2b0f6b 15%, #5a1590 30%, #9c1f8f 45%, #d9452b 60%, #f08a1c 75%, #f9c93c 88%, #fff6d0); box-shadow: 0 0 0 1px rgba(255, 255, 255, .25); }
+  .th-hint { align-self: flex-start; display: inline-flex; align-items: center; gap: 7px; background: var(--green-soft); border: 1px solid #dcefe1; color: var(--ink); font-size: 13px; font-weight: 600; padding: 6px 12px; border-radius: 99px; margin-top: -8px; }
+  .th-hint svg { width: 14px; height: 14px; color: var(--green-dark); flex: none; }
+  .offer-body { padding: 30px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+  .offer-body ul { margin: 4px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+  .offer-body li { display: flex; gap: 10px; align-items: flex-start; }
+  .offer-body li svg { flex: none; width: 20px; height: 20px; color: var(--green); margin-top: 2px; }
+  .offer-body .btn { margin-top: auto; align-self: flex-start; }
+
+  /* Benefici */
+  .benefits { background: var(--green-soft); }
+  .benefits-layout { display: grid; grid-template-columns: 5fr 7fr; gap: 56px; align-items: center; }
+  .benefits-photo { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); position: relative; }
+  .benefits-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 62% center; }
+  .badge-2mm { position: absolute; right: 18px; bottom: 18px; background: #fff; border-radius: 12px; padding: 16px 18px; box-shadow: var(--shadow); text-align: center; }
+  .badge-2mm strong { display: block; font: 800 40px/1 Exo, sans-serif; color: var(--green); }
+  .badge-2mm span { font-size: 13px; font-weight: 600; color: var(--ink); }
+  .benefit-list { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 36px; }
+  .benefit { background: #fff; border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
+  .benefit .ico { width: 48px; height: 48px; border-radius: 12px; background: var(--green-tint); color: var(--green-dark); display: grid; place-items: center; margin-bottom: 14px; }
+  .benefit .ico svg { width: 24px; height: 24px; }
+  .benefit h3 { font-size: 18px; margin-bottom: 6px; }
+  .benefit p { font-size: 15px; }
+  .benefit.wide { grid-column: 1 / -1; display: flex; gap: 18px; align-items: center; }
+  .benefit.wide .ico { margin-bottom: 0; flex: none; }
+
+  /* Colori */
+  .colors-layout { display: grid; grid-template-columns: 5fr 7fr; gap: 64px; align-items: center; }
+  .notice { margin-top: 26px; display: flex; gap: 14px; padding: 18px 20px; border-radius: 12px; background: var(--green-soft); border: 1px solid #dcefe1; }
+  .notice svg { flex: none; width: 22px; height: 22px; color: var(--green-dark); margin-top: 2px; }
+  .notice p { font-size: 15px; color: var(--ink); }
+  .palette { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px 16px; max-width: 520px; justify-self: center; width: 100%; }
+  .tint { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .tint span { width: 56px; height: 56px; border-radius: 50%; background: var(--c); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .08); transition: transform .25s ease; }
+  .tint:hover span { transform: scale(1.08); }
+  .tint.any span { background: conic-gradient(#f4c7c3, #f1e5c0, #c9dccb, #bfdbe3, #d6c8ec, #f4c7c3); }
+  .tint b { font-size: 13px; font-weight: 600; color: var(--ink); text-align: center; line-height: 1.3; }
+  figure { margin: 0; }
+
+  /* Cantiere pulito */
+  .clean { background: var(--navy); color: rgba(255, 255, 255, .78); }
+  .clean h2, .clean h3 { color: #fff; }
+  .clean .eyebrow { color: var(--green); }
+  .clean .head { max-width: 760px; }
+  .clean .lead { color: rgba(255, 255, 255, .78); }
+  .clean-points { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .clean-point { background: rgba(255, 255, 255, .05); border: 1px solid rgba(255, 255, 255, .1); border-radius: var(--radius); padding: 28px 24px; transition: background .3s, transform .3s; }
+  .clean-point:hover { background: rgba(255, 255, 255, .08); transform: translateY(-4px); }
+  .clean-point .n { width: 40px; height: 40px; border-radius: 50%; background: var(--green); color: #fff; display: grid; place-items: center; font: 700 16px/1 Exo, sans-serif; margin-bottom: 18px; }
+  .clean-point h3 { font-size: 18px; margin-bottom: 8px; }
+  .clean-point p { font-size: 15px; }
+
+  /* Metodo */
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; counter-reset: step; }
+  .step { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 24px; position: relative; box-shadow: var(--shadow); }
+  .step .num { font: 800 44px/1 Exo, sans-serif; color: var(--green-tint); -webkit-text-stroke: 1.5px var(--green); margin-bottom: 18px; }
+  .step h3 { font-size: 18px; margin-bottom: 8px; }
+  .step p { font-size: 15px; }
+  .step .pill { display: inline-block; margin-top: 14px; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 5px 10px; border-radius: 99px; background: var(--green-tint); color: var(--green-dark); }
+  .step .pill.paid { background: #eef0f7; color: var(--navy); }
+
+  /* FAQ */
+  .faq { background: var(--green-soft); }
+  .faq-layout { display: grid; grid-template-columns: 4fr 8fr; gap: 56px; align-items: start; }
+  .faq-list { display: grid; gap: 14px; }
+  details { background: #fff; border-radius: 12px; box-shadow: var(--shadow); border: 1px solid transparent; transition: border-color .2s; }
+  details[open] { border-color: #cfe9d6; }
+  summary { list-style: none; cursor: pointer; padding: 22px 24px; display: flex; align-items: center; gap: 16px; font: 700 18px/1.35 Exo, sans-serif; color: var(--ink); }
+  summary::-webkit-details-marker { display: none; }
+  summary .pm { margin-left: auto; flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--green-tint); color: var(--green-dark); display: grid; place-items: center; transition: transform .25s, background .25s, color .25s; }
+  summary .pm svg { width: 16px; height: 16px; }
+  details[open] summary .pm { transform: rotate(45deg); background: var(--green); color: #fff; }
+  .answer { padding: 0 24px 24px; }
+  .answer p + p, .answer p + ul, .answer ul + p { margin-top: 10px; }
+  .answer ul { margin: 0; padding-left: 20px; }
+  .answer li { margin-bottom: 6px; }
+  .answer strong { color: var(--ink); }
+
+  /* Contatti */
+  .contact-layout { display: grid; grid-template-columns: 5fr 7fr; gap: 48px; align-items: start; }
+  .info-card { background: var(--navy); color: rgba(255, 255, 255, .8); border-radius: var(--radius); padding: 36px; }
+  .info-card h3 { color: #fff; font-size: 24px; margin-bottom: 8px; }
+  .info-row { display: flex; gap: 14px; padding: 18px 0; border-top: 1px solid rgba(255, 255, 255, .12); }
+  .info-row:first-of-type { margin-top: 22px; }
+  .info-row svg { flex: none; width: 22px; height: 22px; color: var(--green); margin-top: 2px; }
+  .info-row strong { display: block; color: #fff; font-size: 16px; }
+  .info-row a { color: #fff; text-decoration: none; }
+  .info-row a:hover { color: var(--green); }
+  .info-row .big { font: 700 24px/1.2 Exo, sans-serif; }
+  form.lead-form { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 36px; box-shadow: var(--shadow); }
+  .choice { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 22px; }
+  .choice label { position: relative; display: block; cursor: pointer; }
+  .choice input { position: absolute; opacity: 0; }
+  .choice span { display: block; border: 2px solid var(--line); border-radius: 12px; padding: 16px; transition: border-color .2s, background .2s; }
+  .choice span b { display: block; color: var(--ink); font-family: Exo, sans-serif; font-size: 16px; }
+  .choice span small { font-size: 13px; }
+  .choice input:checked + span { border-color: var(--green); background: var(--green-soft); }
+  .choice input:focus-visible + span { outline: 2px solid var(--navy); outline-offset: 2px; }
+  .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .field { display: grid; gap: 6px; }
+  .field.full { grid-column: 1 / -1; }
+  .field label { font-size: 14px; font-weight: 600; color: var(--ink); }
+  .field input, .field textarea, .field select { font: inherit; color: var(--ink); border: 1px solid #d9dedb; border-radius: 8px; padding: 13px 14px; background: #fff; width: 100%; }
+  .field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+  .field textarea { min-height: 110px; resize: vertical; }
+  .privacy { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; margin: 18px 0 22px; }
+  .privacy input { margin-top: 3px; accent-color: var(--green); }
+  form.lead-form .btn { width: 100%; }
+  .form-note { text-align: center; font-size: 13px; margin-top: 12px; }
+
+  /* Footer */
+  footer { background: #12193a; color: rgba(255, 255, 255, .65); padding: 48px 0 28px; font-size: 14px; }
+  .foot { display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start; }
+  .foot-logo { background: #fff; display: inline-block; padding: 10px 14px; border-radius: 10px; }
+  .foot-logo img { height: 34px; width: auto; }
+  .foot strong { color: #fff; display: block; margin-bottom: 6px; }
+  .foot a { text-decoration: none; }
+  .foot a:hover { color: var(--green); }
+  .copy { margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, .1); font-size: 13px; }
+
+  /* WhatsApp flottante */
+  .wa { position: fixed; right: 20px; bottom: 20px; z-index: 60; width: 58px; height: 58px; border-radius: 50%; background: #25d366; color: #fff; display: grid; place-items: center; box-shadow: 0 8px 22px rgba(37, 211, 102, .35); transition: transform .2s; }
+  .wa:hover { transform: scale(1.06); }
+  .wa svg { width: 30px; height: 30px; }
+
+  /* Animazioni */
+  @keyframes kenburns { from { transform: scale(1.12); } to { transform: scale(1); } }
+  @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes ring { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, .5); } 70%, 100% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); } }
+  .hero-visual { animation: rise 1s .2s cubic-bezier(.2, .7, .2, 1) both; }
+  .hero .eyebrow, .hero h1, .hero p.lead, .hero-ctas, .chips { animation: rise .8s cubic-bezier(.2, .7, .2, 1) both; }
+  .hero h1 { animation-delay: .12s; }
+  .hero p.lead { animation-delay: .28s; }
+  .hero-ctas { animation-delay: .42s; }
+  .chips { animation-delay: .56s; }
+  .stats-grid { animation: rise .8s .7s cubic-bezier(.2, .7, .2, 1) both; }
+  .wa { animation: ring 2.4s 3s infinite; }
+  .btn-primary svg:last-child:not(:first-child) { transition: transform .2s; }
+  .btn-primary:hover svg:last-child:not(:first-child) { transform: translateX(4px); }
+  .benefit .ico, .step .num { transition: transform .3s, background .3s, color .3s; }
+  .benefit:hover .ico { transform: rotate(-8deg) scale(1.08); background: var(--green); color: #fff; }
+  .step:hover .num { transform: translateY(-4px); }
+  .benefit, .step { transition: transform .3s, box-shadow .3s; }
+  .benefit:hover, .step:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; } }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    nav.main { display: none; }
+    header.site .btn { margin-left: auto; }
+    .benefits-layout, .colors-layout, .clean-layout, .faq-layout, .contact-layout { grid-template-columns: 1fr; gap: 40px; }
+    .clean-points { grid-template-columns: 1fr 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; }
+    .benefits-photo img { aspect-ratio: 16 / 10; }
+    .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+    .hero-visual { justify-self: center; max-width: 560px; }
+    .hero-visual img { aspect-ratio: 1 / 1; object-position: center 40%; }
+  }
+  @media (max-width: 760px) {
+    section { padding: 64px 0; }
+    .wrap { padding: 0 16px; }
+    .topbar .hide-sm { display: none; }
+    header.site .wrap { height: 64px; gap: 12px; }
+    .logo img { height: 34px; }
+    header.site .btn { padding: 10px 14px; font-size: 14px; }
+    header.site .btn .long { display: none; }
+    .hero { padding: 40px 0 100px; }
+    .float.f1 { left: 12px; bottom: 16px; padding: 10px 14px; }
+    .float.f1 strong { font-size: 26px; }
+    .float.f2 { right: 12px; top: 16px; padding: 8px 12px; font-size: 13px; }
+    .hero p.lead { font-size: 17px; }
+    .hero-ctas .btn { width: 100%; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .stat { padding: 20px 18px; border-bottom: 1px solid var(--line); }
+    .stat:nth-child(2n) { border-right: 0; }
+    .stat:nth-child(n+3) { border-bottom: 0; }
+    .stat strong { font-size: 28px; }
+    .offer-grid, .benefit-list, .steps, .fields, .choice, .clean-points { grid-template-columns: 1fr; }
+    .offer-body, form.lead-form, .info-card { padding: 24px; }
+    .palette { gap: 22px 8px; }
+    .tint span { width: 48px; height: 48px; }
+    .tint b { font-size: 12px; }
+    .th-read b { font-size: 16px; }
+    .th-hint { font-size: 12px; }
+    summary { font-size: 16px; padding: 18px; }
+    .answer { padding: 0 18px 20px; }
+    .benefit.wide { flex-direction: column; align-items: flex-start; }
+    .benefit.wide .ico { margin-bottom: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Icone riutilizzate -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.4 14.2-4.2-4.2 1.4-1.4 2.8 2.8 5.8-5.8 1.4 1.4z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10zM2 21c0-3 1.85-5.36 5.08-6"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2.7s-6 6.4-6 11.3a6 6 0 0 0 12 0c0-4.9-6-11.3-6-11.3zM3 3l18 18"/></symbol>
+  <symbol id="i-fire" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2s5 4.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3 1-6 1-8.5zM12 22a3 3 0 0 0 3-3c0-2-3-4-3-4s-3 2-3 4a3 3 0 0 0 3 3z"/></symbol>
+  <symbol id="i-wind" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 8h10a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h7"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></g></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.15-1.75-.86-2-.96-.28-.1-.48-.15-.68.15-.2.3-.77.96-.95 1.16-.17.2-.35.22-.65.07a8.2 8.2 0 0 1-2.4-1.48 9 9 0 0 1-1.66-2.07c-.17-.3 0-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.58a1.1 1.1 0 0 0-.8.38 3.36 3.36 0 0 0-1.05 2.5 5.84 5.84 0 0 0 1.22 3.1 13.37 13.37 0 0 0 5.12 4.52c.72.3 1.27.5 1.7.63a4.1 4.1 0 0 0 1.89.12 3.08 3.08 0 0 0 2.02-1.43 2.5 2.5 0 0 0 .17-1.42c-.07-.13-.27-.2-.57-.35zM12.05 21.8a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.72.97.99-3.62-.23-.37a9.82 9.82 0 1 1 8.32 4.6zM20.4 3.6A11.8 11.8 0 0 0 1.84 17.84L.17 24l6.3-1.65a11.78 11.78 0 0 0 5.63 1.43A11.8 11.8 0 0 0 20.4 3.6z"/></symbol>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <a href="tel:+393273019773"><svg><use href="#i-phone"/></svg>327 3019773</a>
+    <a class="hide-sm" href="mailto:info@domunica.it"><svg><use href="#i-mail"/></svg>info@domunica.it</a>
+    <span class="push hide-sm" style="display:inline-flex;gap:8px;align-items:center"><svg><use href="#i-cal"/></svg>Si riceve su appuntamento</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="DomUnica"><img src="https://domunica.it/wp-content/uploads/2023/07/Logo___Domunica.png" alt="DomUnica"></a>
+    <nav class="main" aria-label="Sezioni">
+      <a href="#trattamento">Il trattamento</a>
+      <a href="#colori">Colori</a>
+      <a href="#cantiere">Cantiere pulito</a>
+      <a href="#faq">Domande frequenti</a>
+    </nav>
+    <a class="btn btn-primary" href="#contatti"><svg><use href="#i-cal"/></svg><span>Sopralluogo<span class="long"> gratuito</span></span></a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow"><b>DomUnica</b> Ristrutturazione e trattamento interno · Roma</div>
+        <h1><span class="big">2 mm.</span> È tutto ciò che separa il freddo fuori dal <em>caldo dentro</em>.</h1>
+        <p class="lead">Ristrutturiamo casa tua e trattiamo le pareti interne con uno strato nanotecnologico di appena <strong>2 millimetri</strong>: isola come un cappotto, elimina muro freddo, condensa e muffa ed è già la finitura, nel colore che scegli.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#contatti"><svg><use href="#i-cal"/></svg>Prenota il sopralluogo gratuito</a>
+          <a class="btn btn-outline" href="tel:+393273019773"><svg><use href="#i-phone"/></svg>Chiama 327 3019773</a>
+        </div>
+        <div class="chips">
+          <span class="chip"><svg><use href="#i-check"/></svg>Sopralluogo gratuito</span>
+          <span class="chip"><svg><use href="#i-check"/></svg>Durata minima 25 anni</span>
+          <span class="chip"><svg><use href="#i-check"/></svg>Prodotto completamente green</span>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <div class="frame"><img src="img/parete-2mm-microsfere.webp" width="1080" height="1350" alt="Sezione di una parete: tra il muro e la stanza lo strato DomUnica da 2 mm con le microsfere ceramiche"></div>
+        <div class="float f1"><strong>2 mm</strong><span>di spessore</span></div>
+        <div class="float f2"><span class="dot"><svg><use href="#i-shield"/></svg></span>Microsfere ceramiche</div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- NUMERI -->
+  <section class="stats">
+    <div class="wrap">
+      <div class="stats-grid">
+        <div class="stat"><strong><b data-count="2">2</b><span>&nbsp;mm</span></strong><p>lo spessore di una moneta: zero spazio perso</p></div>
+        <div class="stat"><strong><b data-count="25">25</b><span>+</span></strong><p>anni di durata minima del prodotto</p></div>
+        <div class="stat"><strong><b data-count="100">100</b><span>%</span></strong><p>green, atossico e traspirante</p></div>
+        <div class="stat"><strong><b>0</b><span>&nbsp;€</span></strong><p>per il sopralluogo a domicilio</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFERTA -->
+  <section id="inizia">
+    <div class="wrap">
+      <div class="head center reveal">
+        <div class="eyebrow">Come iniziare</div>
+        <h2>Due modi per conoscere la tua casa</h2>
+        <p class="lead">Partiamo sempre da un sopralluogo, senza impegno. Se vuoi una mappa precisa di dispersioni e ponti termici, aggiungiamo l'analisi con termocamera.</p>
+      </div>
+      <div class="offer-grid">
+        <article class="offer reveal">
+          <div class="offer-img" style="background-image:url('img/sopralluogo.webp')"><span class="tag free">Gratuito</span></div>
+          <div class="offer-body">
+            <h3>Sopralluogo a domicilio</h3>
+            <p>Un nostro tecnico viene a vedere gli ambienti da ristrutturare e da trattare, ascolta le tue esigenze e ti consegna una proposta su misura.</p>
+            <ul>
+              <li><svg><use href="#i-check"/></svg>Valutazione di pareti, umidità e punti critici</li>
+              <li><svg><use href="#i-check"/></svg>Consigli su lavori e colori</li>
+              <li><svg><use href="#i-check"/></svg>Preventivo chiaro, senza impegno</li>
+            </ul>
+            <a class="btn btn-primary" href="#contatti" data-pick="sopralluogo">Prenota il sopralluogo <svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="offer reveal">
+          <div class="offer-img thermo" id="thermo">
+            <canvas width="480" height="270" role="img" aria-label="Termografia di esempio di una parete: angoli freddi in viola, parete in arancio, termosifone in bianco"></canvas>
+            <div class="th-cursor" aria-hidden="true"><i></i><div class="th-read"><b>–</b><span></span></div></div>
+            <div class="th-scale" aria-hidden="true"><span>26°</span><i></i><span>10°</span></div>
+          </div>
+          <div class="offer-body">
+            <span class="th-hint"><svg><use href="#i-info"/></svg><span>Esempio interattivo: <b class="th-verb">muovi il cursore</b> sulla termografia</span></span>
+            <h3>Analisi termica con termocamera</h3>
+            <p>Fotografiamo la temperatura delle tue pareti per individuare con precisione dispersioni, ponti termici e zone a rischio di condensa e muffa.</p>
+            <ul>
+              <li><svg><use href="#i-check"/></svg>Mappa termica di ogni stanza</li>
+              <li><svg><use href="#i-check"/></svg>Individuazione dei muri freddi</li>
+              <li><svg><use href="#i-check"/></svg>Intervento progettato al millimetro</li>
+            </ul>
+            <a class="btn btn-outline" href="#contatti" data-pick="termocamera">Richiedi l'analisi termica <svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICI -->
+  <section class="benefits" id="trattamento">
+    <div class="wrap benefits-layout">
+      <div class="benefits-photo reveal">
+        <img src="img/applicazione-trattamento.jpg" alt="Tecnico DomUnica applica il trattamento sulla parete mentre la famiglia resta in casa">
+        <div class="badge-2mm"><strong>2 mm</strong><span>di spessore</span></div>
+      </div>
+      <div>
+        <div class="reveal">
+          <div class="eyebrow">Il trattamento interno</div>
+          <h2>Uno strato sottile, cinque vantaggi</h2>
+          <p class="lead">Dentro il prodotto lavorano milioni di microsfere ceramiche: uno scudo invisibile sulla parete, attivo giorno e notte.</p>
+        </div>
+        <div class="benefit-list">
+          <div class="benefit reveal">
+            <div class="ico"><svg><use href="#i-sun"/></svg></div>
+            <h3>Caldo d'inverno, fresco d'estate</h3>
+            <p>Il riscaldamento resta nelle stanze e l'afa estiva non entra: più comfort, meno consumi.</p>
+          </div>
+          <div class="benefit reveal">
+            <div class="ico"><svg><use href="#i-drop"/></svg></div>
+            <h3>Stop a condensa e muffa</h3>
+            <p>Elimina il muro freddo: senza superfici fredde, la condensa non si forma e la muffa non attecchisce.</p>
+          </div>
+          <div class="benefit reveal">
+            <div class="ico"><svg><use href="#i-fire"/></svg></div>
+            <h3>Protegge dal fuoco</h3>
+            <p>Prodotto ignifugo: una protezione in più per le pareti di casa.</p>
+          </div>
+          <div class="benefit reveal">
+            <div class="ico"><svg><use href="#i-wind"/></svg></div>
+            <h3>Altamente traspirante</h3>
+            <p>Le pareti respirano, l'aria resta sana e gli ambienti più salubri.</p>
+          </div>
+          <div class="benefit wide reveal">
+            <div class="ico"><svg><use href="#i-leaf"/></svg></div>
+            <div>
+              <h3>Completamente green</h3>
+              <p>Un prodotto atossico e rispettoso dell'ambiente, sicuro per bambini e animali.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLORI -->
+  <section id="colori">
+    <div class="wrap colors-layout">
+      <div class="colors-intro reveal">
+        <div class="eyebrow">Finitura e colori</div>
+        <h2>Il trattamento è già la finitura. Scegli il colore.</h2>
+        <p class="lead">Il prodotto si realizza in qualsiasi colore: nessuna pittura da stendere dopo, pareti pronte e uniformi.</p>
+        <div class="notice">
+          <svg><use href="#i-info"/></svg>
+          <p><strong>Consigliamo tinte chiare</strong>, che valorizzano la luce degli ambienti. Sul trattamento finito non va posato nient'altro: niente pittura, carta da parati o rivestimenti.</p>
+        </div>
+      </div>
+      <div class="palette">
+        <div class="tint reveal"><span style="--c:#f4f1ea"></span><b>Bianco caldo</b></div>
+        <div class="tint reveal"><span style="--c:#e4d7c3"></span><b>Sabbia</b></div>
+        <div class="tint reveal"><span style="--c:#dedcd5"></span><b>Grigio perla</b></div>
+        <div class="tint reveal"><span style="--c:#f1e5c0"></span><b>Vaniglia</b></div>
+        <div class="tint reveal"><span style="--c:#bfdbe3"></span><b>Azzurro polvere</b></div>
+        <div class="tint reveal"><span style="--c:#c9dccb"></span><b>Verde salvia</b></div>
+        <div class="tint reveal"><span style="--c:#e8c9c4"></span><b>Rosa cipria</b></div>
+        <div class="tint any reveal"><span></span><b>Qualsiasi altro colore</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CANTIERE PULITO -->
+  <section class="clean" id="cantiere">
+    <div class="wrap">
+      <div class="head reveal">
+        <div class="eyebrow">Ristrutturazione e trattamento interno</div>
+        <h2>Un solo cantiere: rinnovi casa, isoli le pareti e la ritrovi pulita</h2>
+        <p class="lead">Ristrutturazione e trattamento termico delle pareti nello stesso intervento, con un cantiere ordinato dall'inizio alla fine. E quando abbiamo finito, puliamo noi.</p>
+      </div>
+      <div class="clean-points">
+        <div class="clean-point reveal"><span class="n">1</span><h3>Ambienti protetti</h3><p>Pavimenti, infissi e arredi vengono coperti prima di iniziare.</p></div>
+        <div class="clean-point reveal"><span class="n">2</span><h3>Ristrutturazione e trattamento insieme</h3><p>Nello stesso cantiere rinnoviamo gli ambienti e applichiamo i 2 mm sulle pareti: niente pannelli, nessun ingombro.</p></div>
+        <div class="clean-point reveal"><span class="n">3</span><h3>Pulizia post cantiere</h3><p>A fine lavori rimuoviamo protezioni e residui e puliamo gli ambienti.</p></div>
+        <div class="clean-point reveal"><span class="n">4</span><h3>Casa riconsegnata pronta</h3><p>Pareti già finite nel colore scelto: torni a viverci subito.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METODO -->
+  <section>
+    <div class="wrap">
+      <div class="head center reveal">
+        <div class="eyebrow">Il metodo DomUnica</div>
+        <h2>Quattro passi, nessuna sorpresa</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="num">01</div><h3>Sopralluogo</h3><p>Vediamo casa insieme e raccogliamo le tue esigenze di ristrutturazione.</p><span class="pill">Gratuito</span></div>
+        <div class="step reveal"><div class="num">02</div><h3>Analisi termica</h3><p>Con la termocamera mappiamo dispersioni e muri freddi, stanza per stanza.</p><span class="pill paid">Su richiesta</span></div>
+        <div class="step reveal"><div class="num">03</div><h3>Lavori e trattamento</h3><p>Ristrutturazione e applicazione del trattamento da 2 mm nel colore scelto.</p></div>
+        <div class="step reveal"><div class="num">04</div><h3>Pulizia e consegna</h3><p>Pulizia post cantiere e riconsegna della casa pronta da abitare.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap faq-layout">
+      <div class="reveal">
+        <div class="eyebrow">FAQ</div>
+        <h2>Domande frequenti</h2>
+        <p class="lead">Non trovi la risposta che cerchi? Chiamaci, ti rispondiamo volentieri.</p>
+        <a class="btn btn-primary" style="margin-top:26px" href="tel:+393273019773"><svg><use href="#i-phone"/></svg>327 3019773</a>
+      </div>
+      <div class="faq-list">
+        <details class="reveal" open>
+          <summary>Come fanno 2 mm a isolare una parete?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="answer">
+            <p>Per isolare non serve spessore, serve <strong>riflessione</strong>. Il prodotto contiene milioni di microsfere ceramiche cave che funzionano come piccoli specchi: invece di lasciar passare il calore attraverso il muro, lo respingono.</p>
+            <p>Così d'inverno il caldo dei termosifoni resta nella stanza e d'estate l'afa resta fuori. La parete smette di essere fredda al tatto e gli ambienti si scaldano più in fretta.</p>
+          </div>
+        </details>
+        <details class="reveal">
+          <summary>Quanto dura il prodotto?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="answer">
+            <p>Il trattamento ha una <strong>durata minima di 25 anni</strong>. La ceramica delle microsfere è un materiale inorganico che non si degrada nel tempo.</p>
+          </div>
+        </details>
+        <details class="reveal">
+          <summary>È un prodotto tossico?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="answer">
+            <p><strong>No.</strong> È un prodotto atossico a base acqua, senza odori fastidiosi: puoi viverci in sicurezza, anche con bambini e animali.</p>
+          </div>
+        </details>
+        <details class="reveal">
+          <summary>Oltre a riflettere il calore, cos'altro fa?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="answer">
+            <ul>
+              <li><strong>Elimina il muro freddo</strong>, e con lui condense e muffe.</li>
+              <li><strong>Protegge dal fuoco</strong>: è un prodotto ignifugo.</li>
+              <li><strong>È altamente traspirante</strong>: lascia respirare le pareti e crea ambienti sani.</li>
+            </ul>
+          </div>
+        </details>
+        <details class="reveal">
+          <summary>È un prodotto green?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="answer">
+            <p>Sì, è un <strong>prodotto completamente green</strong>, rispettoso dell'ambiente e di chi abita la casa. In più, trattenendo il calore, riduce i consumi di riscaldamento e raffrescamento.</p>
+          </div>
+        </details>
+        <details class="reveal">
+          <summary>Posso pitturare o mettere qualcosa sopra?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="answer">
+            <p>No: il trattamento è già la <strong>finitura finale</strong> e sopra non va posato nulla. In compenso si realizza in <strong>qualsiasi colore</strong>; consigliamo tinte chiare, che rendono gli ambienti più luminosi.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section id="contatti">
+    <div class="wrap">
+      <div class="head center reveal">
+        <div class="eyebrow">Contatti</div>
+        <h2>Prenota il tuo sopralluogo gratuito</h2>
+        <p class="lead">Lasciaci i tuoi dati: ti richiamiamo per fissare un appuntamento.</p>
+      </div>
+      <div class="contact-layout">
+        <aside class="info-card reveal">
+          <h3>DomUnica</h3>
+          <p>Ristrutturazione e isolamento termico interno nanotecnologico a Roma.</p>
+          <div class="info-row"><svg><use href="#i-phone"/></svg><div><strong>Telefono</strong><a class="big" href="tel:+393273019773">327 3019773</a></div></div>
+          <div class="info-row"><svg><use href="#i-pin"/></svg><div><strong>Sede legale</strong><a href="https://www.google.com/maps/search/?api=1&query=Via+XX+Settembre+118+00187+Roma" target="_blank" rel="noopener">Via XX Settembre 118<br>00187 Roma</a></div></div>
+          <div class="info-row"><svg><use href="#i-cal"/></svg><div><strong>Si riceve su appuntamento</strong>Chiamaci o scrivici per fissare un incontro.</div></div>
+          <div class="info-row"><svg><use href="#i-mail"/></svg><div><strong>Email</strong><a href="mailto:info@domunica.it">info@domunica.it</a></div></div>
+        </aside>
+
+        <form class="lead-form reveal" id="lead-form" novalidate>
+          <div class="choice" role="radiogroup" aria-label="Tipo di richiesta">
+            <label><input type="radio" name="tipo" value="Sopralluogo gratuito" checked><span><b>Sopralluogo</b><small>Gratuito</small></span></label>
+            <label><input type="radio" name="tipo" value="Analisi termica con termocamera"><span><b>Analisi con termocamera</b><small>Mappa termica della casa</small></span></label>
+          </div>
+          <div class="fields">
+            <div class="field"><label for="f-nome">Nome e cognome</label><input id="f-nome" name="nome" autocomplete="name" required></div>
+            <div class="field"><label for="f-tel">Telefono</label><input id="f-tel" name="telefono" type="tel" autocomplete="tel" required></div>
+            <div class="field full"><label for="f-zona">Zona / quartiere</label><input id="f-zona" name="zona" placeholder="Es. Prati, Roma"></div>
+            <div class="field full"><label for="f-msg">Di cosa hai bisogno?</label><textarea id="f-msg" name="messaggio" placeholder="Es. ristrutturazione bagno e camera, muffa sulla parete nord…"></textarea></div>
+          </div>
+          <label class="privacy"><input type="checkbox" name="privacy" required> <span>Acconsento al trattamento dei dati personali per essere ricontattato.</span></label>
+          <button class="btn btn-primary" type="submit"><svg><use href="#i-wa"/></svg>Invia la richiesta su WhatsApp</button>
+          <p class="form-note">Oppure chiamaci al <a href="tel:+393273019773">327 3019773</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><span class="foot-logo"><img src="https://domunica.it/wp-content/uploads/2023/07/Logo___Domunica.png" alt="DomUnica"></span></div>
+      <div><strong>Sede legale</strong>Via XX Settembre 118<br>00187 Roma<br>Si riceve su appuntamento</div>
+      <div><strong>Contatti</strong><a href="tel:+393273019773">327 3019773</a><br><a href="mailto:info@domunica.it">info@domunica.it</a><br><a href="https://domunica.it" target="_blank" rel="noopener">domunica.it</a></div>
+    </div>
+    <div class="copy">© <span id="year">2026</span> DomUnica. Tutti i diritti riservati.</div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/393273019773" target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Animazione all'ingresso
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      el.classList.add('in');
+      io.unobserve(el);
+      // A ingresso finito tolgo ritardo e classi, così gli hover restano reattivi
+      el.addEventListener('transitionend', () => { el.classList.remove('reveal', 'in'); el.style.transitionDelay = ''; }, { once: true });
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach((el) => {
+    // Gli elementi affiancati entrano uno dopo l'altro
+    const siblings = [...el.parentElement.children].filter((c) => c.classList.contains('reveal'));
+    if (siblings.length > 1) el.style.transitionDelay = `${siblings.indexOf(el) * 90}ms`;
+    io.observe(el);
+  });
+
+  // Conteggio dei numeri
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const counter = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      counter.unobserve(e.target);
+      const end = +e.target.dataset.count, start = performance.now(), dur = 1400;
+      const tick = (t) => {
+        const k = Math.min((t - start) / dur, 1);
+        e.target.textContent = Math.round(end * (1 - Math.pow(1 - k, 3)));
+        if (k < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+  }, { threshold: 0.6 });
+  if (!reduced) document.querySelectorAll('[data-count]').forEach((el) => counter.observe(el));
+
+  // I bottoni delle card preselezionano il tipo di richiesta
+  document.querySelectorAll('[data-pick]').forEach((a) => a.addEventListener('click', () => {
+    const value = a.dataset.pick === 'termocamera' ? 'Analisi termica con termocamera' : 'Sopralluogo gratuito';
+    document.querySelector(`input[name="tipo"][value="${value}"]`).checked = true;
+  }));
+
+  // Termografia di esempio: la temperatura è una funzione della posizione, i colori la rappresentano
+  const thermo = document.getElementById('thermo');
+  if (thermo) {
+    const canvas = thermo.querySelector('canvas'), ctx = canvas.getContext('2d');
+    const W = canvas.width, H = canvas.height, TMIN = 10, TMAX = 26;
+    const blob = (u, v, cx, cy, sx, sy) => Math.exp(-((u - cx) ** 2 / (2 * sx * sx) + (v - cy) ** 2 / (2 * sy * sy)));
+    const band = (x, a, b, k) => 1 / (1 + Math.exp(-(x - a) / k)) - 1 / (1 + Math.exp(-(x - b) / k));
+    const temp = (u, v) => 20.5
+      + 1.6 * blob(u, v, .42, .5, .3, .3)              // parete scaldata dall'ambiente
+      + 24 * blob(u, v, .42, .87, .13, .045)           // termosifone
+      - 4 * Math.exp(-v / .07)                         // giunto parete-soffitto
+      - 3.5 * Math.exp(-u / .05)                       // spigolo verso l'esterno
+      - 7 * blob(u, v, 0, 0, .18, .26)                 // angolo freddo
+      - 2 * Math.exp(-(1 - v) / .05)                   // attacco a pavimento
+      - 5.5 * band(u, .66, .88, .01) * band(v, .16, .6, .01) // finestra
+      + .15 * Math.sin(u * 37 + v * 11) * Math.cos(v * 23);
+    const stops = [[0, [10, 7, 48]], [.15, [43, 15, 107]], [.3, [90, 21, 144]], [.45, [156, 31, 143]], [.6, [217, 69, 43]], [.75, [240, 138, 28]], [.88, [249, 201, 60]], [1, [255, 246, 208]]];
+    const color = (t) => {
+      t = Math.min(1, Math.max(0, t));
+      let i = 1;
+      while (t > stops[i][0]) i++;
+      const [a, ca] = stops[i - 1], [b, cb] = stops[i], k = (t - a) / (b - a);
+      return ca.map((c, n) => c + (cb[n] - c) * k);
+    };
+    const img = ctx.createImageData(W, H);
+    for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+      const [r, g, b] = color((temp(x / W, y / H) - TMIN) / (TMAX - TMIN)), o = (y * W + x) * 4;
+      img.data[o] = r; img.data[o + 1] = g; img.data[o + 2] = b; img.data[o + 3] = 255;
+    }
+    ctx.putImageData(img, 0, 0);
+
+    const cursor = thermo.querySelector('.th-cursor'), value = cursor.querySelector('b'), label = cursor.querySelector('span');
+    const state = (t) => t < 14 ? ['Muro freddo: rischio condensa e muffa', 'cold']
+      : t < 17.5 ? ['Dispersione di calore', 'cool']
+      : t <= 24 ? ['Parete in comfort', 'ok']
+      : ['Fonte di calore', 'hot'];
+    const place = (u, v) => {
+      u = Math.min(.97, Math.max(.03, u)); v = Math.min(.96, Math.max(.04, v));
+      const t = temp(u, v), [text, cls] = state(t);
+      cursor.style.left = `${u * 100}%`; cursor.style.top = `${v * 100}%`;
+      value.textContent = `${t.toFixed(1).replace('.', ',')} °C`;
+      label.textContent = text;
+      cursor.dataset.state = cls;
+      cursor.classList.toggle('flip', u > .5);
+      cursor.classList.toggle('up', v > .72);
+    };
+    const at = (e) => { const r = thermo.getBoundingClientRect(); return [(e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height]; };
+    let active = false;
+    ['pointerdown', 'pointermove'].forEach((type) => thermo.addEventListener(type, (e) => {
+      active = true; thermo.classList.add('live'); place(...at(e));
+    }));
+    thermo.addEventListener('pointerleave', () => { active = false; thermo.classList.remove('live'); });
+    if (matchMedia('(hover: none)').matches) document.querySelector('.th-verb').textContent = 'tocca';
+
+    // Finché nessuno la usa, il mirino fa un giro dei punti più interessanti
+    const tour = [[.06, .09], [.45, .45], [.42, .86], [.77, .38], [.05, .55]];
+    let step = 0;
+    place(...tour[0]);
+    if (!reduced) setInterval(() => { if (active) return; step = (step + 1) % tour.length; place(...tour[step]); }, 2400);
+  }
+
+  // Il form compone un messaggio WhatsApp
+  document.getElementById('lead-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const f = e.target;
+    if (!f.reportValidity()) return;
+    const d = new FormData(f);
+    const lines = [
+      `Richiesta: ${d.get('tipo')}`,
+      `Nome: ${d.get('nome')}`,
+      `Telefono: ${d.get('telefono')}`,
+      d.get('zona') && `Zona: ${d.get('zona')}`,
+      d.get('messaggio') && `Note: ${d.get('messaggio')}`,
+    ].filter(Boolean);
+    window.open(`https://wa.me/393273019773?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
+  });
+</script>
+</body>
+</html>
