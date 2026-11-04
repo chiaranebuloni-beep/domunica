@@ -97,8 +97,7 @@ Palette: verde `#06C12E` / `#04A527`, blu del logo `#1B2760`, blu scuro `#121A46
 
 ## Stato di pubblicazione
 
-- **GitHub**: https://github.com/chiaranebuloni-beep/domunica, ramo `main`, 2 commit. L'autore è configurato come "Giulia Carra" / giulia.carra@reddoak.com. Il nome è stato ricavato dall'email: l'utente può cambiarlo.
-- **Le modifiche del redesign NON sono committate**: `index.html` è modificato in locale e anche `CLAUDE.md` non è committato.
+- **GitHub**: https://github.com/chiaranebuloni-beep/domunica, ramo `main`. Redesign e questo file sono committati e pushati (4 novembre 2026). L'autore è configurato come "Giulia Carra" / giulia.carra@reddoak.com. Il nome è stato ricavato dall'email: l'utente può cambiarlo.
 - **Vercel**: https://domunica.vercel.app (progetto `domunica`, account `info-14619257`, deploy con `npx vercel@latest deploy --prod --yes`). **Online c'è ancora la PRIMA versione** (quella bocciata), non il redesign.
 - **Collegamento automatico Vercel ↔ GitHub: non riuscito.** Errore: "You need admin or write access to the repository". L'utente deve dare all'app Vercel l'accesso al repo `chiaranebuloni-beep/domunica`:
   - da Vercel: progetto → Settings → Git;
