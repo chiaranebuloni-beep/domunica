@@ -3,506 +3,604 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ristrutturazione e Trattamento Termico Interno | DomUnica Roma</title>
-<meta name="description" content="Ristrutturazione e trattamento termico interno nanotecnologico in soli 2 mm. Sopralluogo gratuito a Roma, analisi con termocamera, cantiere pulito e qualsiasi colore.">
+<title>Ristrutturazione e Trattamento Interno | DomUnica Roma</title>
+<meta name="description" content="Ristrutturazione e trattamento interno delle pareti con un rasante da 2 mm. Sopralluogo gratuito a Roma, analisi con termocamera, cantiere pulito e qualsiasi colore.">
 <link rel="icon" href="https://domunica.it/wp-content/uploads/2023/07/Logo___Domunica.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --cold: #1b2760;
-    --cold-deep: #121a46;
-    --frost: #9db2ee;
-    --layer: #06c12e;
-    --layer-dark: #04a527;
-    --mist: #eef2f7;
-    --mist-line: #d9e0ea;
+    --green: #06c12e;
+    --green-dark: #04a527;
+    --green-soft: #f4faf6;
+    --green-tint: rgba(6, 193, 46, .1);
+    --navy: #1d2b64;
     --ink: #1f1f25;
-    --stone: #575c66;
-    --line: #e6e2dc;
-    --paper: #ffffff;
+    --muted: #74787c;
+    --line: #e7ebe8;
+    --bg: #ffffff;
+    --radius: 14px;
+    --shadow: 0 6px 24px rgba(31, 31, 37, .06);
+    --shadow-hover: 0 10px 30px rgba(31, 31, 37, .1);
     --wrap: 1200px;
-    --gutter: 20px;
   }
   * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
-  body { margin: 0; background: var(--paper); color: var(--stone); font: 400 17px/1.6 Exo, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+  body { margin: 0; background: var(--bg); color: var(--muted); font: 400 16px/1.65 Exo, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
   img { max-width: 100%; display: block; }
   a { color: inherit; }
-  h1, h2, h3 { font-family: Exo, sans-serif; color: var(--ink); margin: 0; line-height: 1.12; letter-spacing: -.02em; }
-  h2 { font-size: clamp(30px, 4vw, 46px); font-weight: 800; max-width: 18ch; }
-  h3 { font-size: 22px; font-weight: 700; }
+  h1, h2, h3, h4 { font-family: Exo, sans-serif; color: var(--ink); margin: 0; line-height: 1.15; letter-spacing: -.02em; }
+  h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 700; }
+  h3 { font-size: 21px; font-weight: 700; }
   p { margin: 0; }
-  :focus-visible { outline: 3px solid var(--layer); outline-offset: 3px; border-radius: 4px; }
-  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
-  section { padding: 120px 0; }
-  .intro { max-width: 54ch; margin-top: 18px; font-size: 19px; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
+  section { padding: 96px 0; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; font: 700 13px/1 Exo, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--green-dark); margin-bottom: 14px; }
+  .eyebrow b { background: var(--green); color: #fff; padding: 5px 8px; border-radius: 4px; }
+  .lead { font-size: 18px; max-width: 640px; margin-top: 16px; }
+  .head { margin-bottom: 48px; }
+  .head.center { text-align: center; }
+  .head.center .lead { margin-left: auto; margin-right: auto; }
 
-  /* Pulsanti */
-  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 26px; border-radius: 6px; font: 700 16px/1 Exo, sans-serif; text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+  /* Bottoni */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 15px 26px; border-radius: 8px; font: 700 15px/1 Exo, sans-serif; text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: background .2s, color .2s, transform .2s, box-shadow .2s; }
   .btn svg { width: 18px; height: 18px; flex: none; }
-  .btn-primary { background: var(--layer); color: #fff; }
-  .btn-primary:hover { background: var(--layer-dark); }
-  .btn-outline { color: var(--ink); border-color: var(--ink); background: transparent; }
-  .btn-outline:hover { background: var(--ink); color: #fff; }
-  .link { font-weight: 600; color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 4px; }
-  .link:hover { color: var(--layer-dark); }
+  .btn-primary { background: var(--green); color: #fff; }
+  .btn-primary:hover { background: var(--green-dark); transform: translateY(-1px); box-shadow: 0 8px 20px rgba(6, 193, 46, .25); }
+  .btn-ghost { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .7); }
+  .btn-ghost:hover { background: #fff; color: var(--ink); }
+  .btn-outline { background: #fff; color: var(--ink); border-color: var(--line); }
+  .btn-outline:hover { border-color: var(--green); color: var(--green-dark); }
 
   /* Header sempre visibile */
-  header.site { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, .97); box-shadow: 0 1px 0 var(--line); }
-  header.site .wrap { display: flex; align-items: center; gap: 36px; height: 72px; }
-  .logo img { height: 40px; width: auto; }
+  .topbar { background: var(--green); color: #fff; font-size: 14px; }
+  .topbar .wrap { display: flex; gap: 24px; align-items: center; height: 38px; }
+  .topbar a { text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+  .topbar svg { width: 14px; height: 14px; }
+  .topbar .push { margin-left: auto; }
+  header.site { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, .96); backdrop-filter: blur(8px); box-shadow: 0 1px 0 var(--line); }
+  header.site .wrap { display: flex; align-items: center; gap: 32px; height: 76px; }
+  .logo img { height: 46px; width: auto; }
   nav.main { display: flex; gap: 28px; margin-left: auto; }
-  nav.main a { text-decoration: none; color: var(--ink); font-weight: 500; font-size: 15px; }
-  nav.main a:hover { color: var(--layer-dark); }
-  .head-phone { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 15px; color: var(--ink); text-decoration: none; }
-  .head-phone svg { width: 16px; height: 16px; color: var(--layer-dark); }
-  header.site .btn { padding: 12px 18px; font-size: 15px; }
+  nav.main a { text-decoration: none; color: var(--ink); font-weight: 600; font-size: 15px; }
+  nav.main a:hover { color: var(--green-dark); }
+  header.site .btn { padding: 12px 20px; }
 
-  /* HERO: foto a tutto schermo con il titolo in basso, come il post */
-  .hero { position: relative; padding: 0; overflow: hidden; min-height: min(780px, calc(100svh - 72px - 96px)); display: flex; align-items: flex-end; background: var(--cold); }
-  .hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 45%; animation: settle 2.4s cubic-bezier(.2, .7, .2, 1) both; }
-  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10, 16, 40, .62) 0%, rgba(10, 16, 40, .28) 45%, rgba(10, 16, 40, 0) 70%), linear-gradient(0deg, rgba(10, 16, 40, .45) 0%, rgba(10, 16, 40, 0) 50%); }
-  .hero-text { position: relative; z-index: 1; width: 100%; padding-top: 120px; padding-bottom: 64px; color: #fff; }
-  .kicker { font-size: 18px; font-weight: 500; color: rgba(255, 255, 255, .9); margin-bottom: 18px; }
-  .hero h1 { color: #fff; font-weight: 400; font-size: clamp(28px, 3.4vw, 46px); line-height: 1.18; letter-spacing: -.01em; max-width: 20ch; }
+  /* Hero */
+  .hero { position: relative; padding: 64px 0; overflow: hidden; background: linear-gradient(160deg, var(--green-soft) 0%, #fff 65%); }
+  .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: center; }
+  .hero-visual { position: relative; margin: 0; max-width: 500px; justify-self: end; width: 100%; }
+  .hero-visual .frame { border-radius: 22px; overflow: hidden; box-shadow: 0 24px 60px rgba(29, 43, 100, .16); }
+  .hero-visual img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; transform-origin: 80% 50%; animation: kenburns 18s ease-out both; }
+  .float { position: absolute; background: #fff; border-radius: 14px; padding: 14px 18px; box-shadow: var(--shadow-hover); animation: bob 5s ease-in-out infinite; }
+  .float.f2 { left: -20px; bottom: 36px; display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 14px; color: var(--ink); animation-delay: -2.5s; }
+  .float .dot { width: 34px; height: 34px; border-radius: 50%; background: var(--green-tint); color: var(--green-dark); display: grid; place-items: center; }
+  .float .dot svg { width: 18px; height: 18px; }
+  .hero h1 { font-size: clamp(32px, 4.2vw, 52px); font-weight: 400; max-width: 620px; }
   .hero h1 b { font-weight: 800; }
-  .hero h1 .mm { display: block; font-weight: 800; font-size: clamp(110px, 15vw, 220px); line-height: .85; letter-spacing: -.045em; margin-bottom: 14px; }
-  .bar-green { background: var(--layer-dark); color: #fff; }
-  .bar-green .wrap { display: flex; align-items: center; gap: 28px; min-height: 96px; padding-top: 16px; padding-bottom: 16px; }
-  .bar-phone { display: inline-flex; align-items: center; gap: 14px; font-size: 26px; font-weight: 700; text-decoration: none; }
-  .bar-phone .ring { width: 46px; height: 46px; border-radius: 50%; background: #fff; color: var(--layer-dark); display: grid; place-items: center; }
-  .bar-phone .ring svg { width: 24px; height: 24px; }
-  .bar-note { font-size: 16px; font-weight: 600; color: var(--cold); }
-  .bar-green .btn { margin-left: auto; }
-  .btn-white { background: #fff; color: var(--ink); }
-  .btn-white:hover { background: var(--cold); color: #fff; }
-  @keyframes settle { from { transform: scale(1.06); } }
-  @keyframes appear { from { opacity: 0; transform: translateY(14px); } }
-  .hero .kicker { animation: appear .8s .2s cubic-bezier(.2, .7, .2, 1) both; }
-  .hero h1 { animation: appear .9s .35s cubic-bezier(.2, .7, .2, 1) both; }
+  .hero h1 .big { display: block; font-size: 2.1em; font-weight: 800; line-height: .95; color: var(--green); letter-spacing: -.04em; margin-bottom: 10px; }
+  .hero p.lead strong { color: var(--ink); }
+  .hero p.lead { font-size: 18px; max-width: 560px; margin-top: 22px; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+  .logos { padding: 36px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #fff; }
+  .logos-title { text-align: center; font-weight: 700; color: var(--ink); margin: 0 0 18px; }
+  .logos-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(8, 1fr); gap: 12px 20px; align-items: center; }
+  .logos-list img { display: block; width: 100%; max-width: 124px; height: auto; margin: 0 auto; }
+  @media (max-width: 900px) { .logos-list { grid-template-columns: repeat(4, 1fr); } }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px; }
+  .chip { display: inline-flex; align-items: center; gap: 8px; background: #fff; border: 1px solid var(--line); padding: 8px 14px; border-radius: 99px; font-size: 14px; font-weight: 600; color: var(--ink); box-shadow: 0 2px 8px rgba(31, 31, 37, .04); }
+  .chip svg { width: 16px; height: 16px; color: var(--green); }
 
-  /* Come funziona */
-  .how { display: grid; grid-template-columns: 5fr 6fr; gap: 72px; align-items: center; }
-  .how-img img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px; }
-  .how-text > p { margin-top: 18px; max-width: 52ch; }
-  .scale { margin: 44px 0 0; }
-  .scale-row + .scale-row { margin-top: 22px; }
-  .scale-row b { display: block; font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
-  .bar { height: 40px; border-radius: 3px; }
-  .bar.panel { width: 100%; background: repeating-linear-gradient(135deg, #e9e5df 0 8px, #d9d3ca 8px 10px); }
-  .bar.thin { width: calc(100% * 2 / 120); min-width: 4px; background: var(--layer); }
-  .scale figcaption { margin-top: 18px; font-size: 15px; }
 
-  /* Come iniziare */
-  .start-head { margin-bottom: 64px; }
-  .duo { display: grid; grid-template-columns: 7fr 5fr; gap: 64px; align-items: center; }
-  .duo + .duo { margin-top: 96px; }
-  .duo.flip { grid-template-columns: 5fr 7fr; }
-  .duo.flip .duo-text { order: -1; }
-  .duo-photo { aspect-ratio: 16 / 10; border-radius: 18px; background: center / cover no-repeat; }
-  .duo-text p { margin-top: 14px; }
-  .ticks { list-style: none; padding: 0; margin: 20px 0 28px; display: grid; gap: 8px; color: var(--ink); }
-  .ticks li { padding-left: 22px; position: relative; }
-  .ticks li::before { content: ""; position: absolute; left: 0; top: .6em; width: 10px; height: 3px; background: var(--layer); }
-  .price { display: inline-block; margin-top: 10px; font-weight: 700; color: var(--layer-dark); }
-  .try { margin-top: 16px; font-size: 15px; color: var(--ink); }
-  .try b { font-weight: 700; }
-
-  /* Termografia */
-  .thermo { position: relative; aspect-ratio: 16 / 9; border-radius: 18px; overflow: hidden; background: #2b0f6b; cursor: crosshair; touch-action: pan-y; user-select: none; }
+  /* Offerta: sopralluogo + termocamera */
+  .offer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .offer { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow .25s, transform .25s; border: 1px solid var(--line); }
+  .offer:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
+  .offer-img { aspect-ratio: 16 / 9; background-size: cover; background-position: center; position: relative; }
+  .tag { position: absolute; top: 16px; left: 16px; font: 700 13px/1 Exo, sans-serif; letter-spacing: .06em; text-transform: uppercase; padding: 8px 12px; border-radius: 6px; }
+  .tag.free { background: var(--green); color: #fff; }
+  .offer-img.thermo { overflow: hidden; background: #2b0f6b; cursor: crosshair; touch-action: pan-y; user-select: none; }
   .thermo canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
   .th-cursor { position: absolute; left: 10%; top: 16%; z-index: 2; pointer-events: none; transition: left 1s cubic-bezier(.4, 0, .2, 1), top 1s cubic-bezier(.4, 0, .2, 1); }
   .thermo.live .th-cursor { transition: none; }
   .th-cursor i { position: absolute; left: -18px; top: -18px; width: 36px; height: 36px; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 0 1px rgba(0, 0, 0, .2); }
-  .th-cursor i::before, .th-cursor i::after { content: ""; position: absolute; }
+  .th-cursor i::before, .th-cursor i::after { content: ""; position: absolute; background: #fff; }
   .th-cursor i::before { left: 15px; top: -10px; width: 2px; height: 52px; background: linear-gradient(#fff 0 22%, transparent 22% 78%, #fff 78%); }
   .th-cursor i::after { top: 15px; left: -10px; height: 2px; width: 52px; background: linear-gradient(90deg, #fff 0 22%, transparent 22% 78%, #fff 78%); }
-  .th-read { position: absolute; left: 28px; top: -24px; white-space: nowrap; background: rgba(10, 14, 40, .84); color: #fff; border-radius: 8px; padding: 7px 12px; }
+  .th-read { position: absolute; left: 28px; top: -24px; white-space: nowrap; background: rgba(10, 14, 40, .84); color: #fff; border-radius: 9px; padding: 7px 12px; box-shadow: 0 6px 18px rgba(0, 0, 0, .25); }
   .th-cursor.flip .th-read { left: auto; right: 28px; }
   .th-cursor.up .th-read { top: -74px; }
-  .th-read b { display: block; font: 800 20px/1.1 Exo, sans-serif; font-variant-numeric: tabular-nums; }
-  .th-read span { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; margin-top: 2px; }
+  .th-read b { display: block; font: 800 19px/1.1 Exo, sans-serif; font-variant-numeric: tabular-nums; }
+  .th-read span { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; margin-top: 2px; }
   .th-read span::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--dot, #fff); }
   .th-cursor[data-state="cold"] { --dot: #5aa8ff; }
   .th-cursor[data-state="cool"] { --dot: #c38bff; }
-  .th-cursor[data-state="ok"] { --dot: var(--layer); }
+  .th-cursor[data-state="ok"] { --dot: var(--green); }
   .th-cursor[data-state="hot"] { --dot: #ffc23d; }
-  .th-scale { position: absolute; right: 14px; top: 14px; bottom: 14px; display: flex; flex-direction: column; align-items: center; gap: 6px; color: #fff; font-size: 12px; font-weight: 600; pointer-events: none; }
+  .th-scale { position: absolute; right: 14px; top: 14px; bottom: 14px; display: flex; flex-direction: column; align-items: center; gap: 6px; color: #fff; font-size: 11px; font-weight: 700; pointer-events: none; }
   .th-scale i { flex: 1; width: 10px; border-radius: 5px; background: linear-gradient(to top, #0a0730, #2b0f6b 15%, #5a1590 30%, #9c1f8f 45%, #d9452b 60%, #f08a1c 75%, #f9c93c 88%, #fff6d0); box-shadow: 0 0 0 1px rgba(255, 255, 255, .25); }
+  .th-hint { align-self: flex-start; display: inline-flex; align-items: center; gap: 7px; background: var(--green-soft); border: 1px solid #dcefe1; color: var(--ink); font-size: 13px; font-weight: 600; padding: 6px 12px; border-radius: 99px; margin-top: -8px; }
+  .th-hint svg { width: 14px; height: 14px; color: var(--green-dark); flex: none; }
+  .offer-body { padding: 30px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+  .offer-body ul { margin: 4px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+  .offer-body li { display: flex; gap: 10px; align-items: flex-start; }
+  .offer-body li svg { flex: none; width: 20px; height: 20px; color: var(--green); margin-top: 2px; }
+  .offer-body .btn { margin-top: auto; align-self: flex-start; }
 
-  /* Cosa cambia */
-  .gains { background: var(--mist); }
-  .gains-layout { display: grid; grid-template-columns: 5fr 6fr; gap: 72px; align-items: start; }
-  .gains-img img { width: 100%; height: auto; aspect-ratio: 1080 / 890; object-fit: cover; border-radius: 18px; }
-  .gain-list { list-style: none; padding: 0; margin: 36px 0 0; }
-  .gain-list li { padding: 22px 0; border-top: 1px solid var(--mist-line); display: grid; grid-template-columns: 15ch 1fr; gap: 24px; }
-  .gain-list li:last-child { border-bottom: 1px solid var(--mist-line); }
-  .gain-list h3 { font-size: 19px; }
+  /* Benefici */
+  .benefits { background: var(--green-soft); }
+  .benefits-layout { display: grid; grid-template-columns: 5fr 7fr; gap: 56px; align-items: center; }
+  .benefits-photo { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); position: relative; }
+  .benefits-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 62% center; }
+  .benefit-list { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 36px; }
+  .benefit { background: #fff; border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
+  .benefit .ico { width: 48px; height: 48px; border-radius: 12px; background: var(--green-tint); color: var(--green-dark); display: grid; place-items: center; margin-bottom: 14px; }
+  .benefit .ico svg { width: 24px; height: 24px; }
+  .benefit h3 { font-size: 18px; margin-bottom: 6px; }
+  .benefit p { font-size: 15px; }
+  .benefit.wide { grid-column: 1 / -1; display: flex; gap: 18px; align-items: center; }
+  .benefit.wide .ico { margin-bottom: 0; flex: none; }
 
   /* Colori */
-  .colors-head { display: flex; justify-content: space-between; align-items: end; gap: 48px; flex-wrap: wrap; }
-  .colors-head p { max-width: 44ch; }
-  .palette { display: flex; flex-wrap: wrap; gap: 28px 36px; margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--line); }
-  .tint { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 88px; }
-  .tint span { width: 52px; height: 52px; border-radius: 50%; background: var(--c); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .08); }
+  .colors-layout { display: grid; grid-template-columns: 5fr 7fr; gap: 64px; align-items: center; }
+  .notice { margin-top: 26px; display: flex; gap: 14px; padding: 18px 20px; border-radius: 12px; background: var(--green-soft); border: 1px solid #dcefe1; }
+  .notice svg { flex: none; width: 22px; height: 22px; color: var(--green-dark); margin-top: 2px; }
+  .notice p { font-size: 15px; color: var(--ink); }
+  .palette { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px 16px; max-width: 520px; justify-self: center; width: 100%; }
+  .tint { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .tint span { width: 56px; height: 56px; border-radius: 50%; background: var(--c); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .08); transition: transform .25s ease; }
+  .tint:hover span { transform: scale(1.08); }
   .tint.any span { background: conic-gradient(#f4c7c3, #f1e5c0, #c9dccb, #bfdbe3, #d6c8ec, #f4c7c3); }
-  .tint b { font-size: 14px; font-weight: 500; color: var(--ink); text-align: center; line-height: 1.3; }
-  .color-note { margin-top: 32px; color: var(--ink); max-width: 64ch; }
+  .tint b { font-size: 13px; font-weight: 600; color: var(--ink); text-align: center; line-height: 1.3; }
+  figure { margin: 0; }
 
-  /* Percorso: un solo cantiere */
-  .path { background: var(--cold); color: rgba(255, 255, 255, .74); }
-  .path h2, .path h3 { color: #fff; }
-  .path .intro { color: rgba(255, 255, 255, .74); }
-  .steps { list-style: none; padding: 0; margin: 72px 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; position: relative; counter-reset: step; }
-  .steps::before { content: ""; position: absolute; left: 0; right: 0; top: 13px; height: 4px; background: var(--layer); }
-  .steps li { position: relative; padding-top: 52px; counter-increment: step; }
-  .steps li::before { content: counter(step); position: absolute; top: 0; left: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--cold); border: 4px solid var(--layer); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 13px; box-sizing: border-box; }
-  .steps h3 { font-size: 20px; margin-bottom: 10px; }
-  .steps p { font-size: 16px; }
-  .steps .when { display: block; margin-top: 12px; font-size: 14px; font-weight: 600; color: var(--frost); }
+  /* Cantiere pulito */
+  .clean { background: var(--navy); color: rgba(255, 255, 255, .78); }
+  .clean h2, .clean h3 { color: #fff; }
+  .clean .eyebrow { color: var(--green); }
+  .clean .head { max-width: 760px; }
+  .clean .lead { color: rgba(255, 255, 255, .78); }
+  .clean-points { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .clean-point { position: relative; overflow: hidden; background: rgba(255, 255, 255, .05); border: 1px solid rgba(255, 255, 255, .1); border-radius: var(--radius); padding: 28px 24px; transition: background .3s, transform .3s; }
+  /* Le tappe si accendono una dopo l'altra quando la sezione entra in vista */
+  .clean-point::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 3px; background: var(--green); transform: scaleX(0); transform-origin: left; transition: transform .6s ease; }
+  .clean-points.play .clean-point::before { transform: scaleX(1); }
+  .clean-points.play .clean-point .n { animation: step-pop .5s ease both; }
+  .clean-point:nth-child(2)::before, .clean-points.play .clean-point:nth-child(2) .n { transition-delay: .5s; animation-delay: .5s; }
+  .clean-point:nth-child(3)::before, .clean-points.play .clean-point:nth-child(3) .n { transition-delay: 1s; animation-delay: 1s; }
+  .clean-point:nth-child(4)::before, .clean-points.play .clean-point:nth-child(4) .n { transition-delay: 1.5s; animation-delay: 1.5s; }
+  @keyframes step-pop { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.2); } }
+  @media (prefers-reduced-motion: reduce) {
+    .clean-point::before { transform: scaleX(1); transition: none; }
+    .clean-points.play .clean-point .n { animation: none; }
+  }
+  .clean-point:hover { background: rgba(255, 255, 255, .08); transform: translateY(-4px); }
+  .clean-point .n { width: 40px; height: 40px; border-radius: 50%; background: var(--green); color: #fff; display: grid; place-items: center; font: 700 16px/1 Exo, sans-serif; margin-bottom: 18px; }
+  .clean-point h3 { font-size: 18px; margin-bottom: 8px; }
+  .clean-point p { font-size: 15px; }
+  .clean-point .pill { display: inline-block; margin-top: 14px; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 5px 10px; border-radius: 99px; background: rgba(255, 255, 255, .14); color: #fff; }
 
   /* FAQ */
-  .faq-layout { display: grid; grid-template-columns: 4fr 7fr; gap: 72px; align-items: start; }
-  .faq-side p { margin-top: 16px; }
-  details { border-top: 1px solid var(--line); }
-  details:last-child { border-bottom: 1px solid var(--line); }
-  summary { list-style: none; cursor: pointer; padding: 24px 0; display: flex; align-items: center; gap: 20px; font-weight: 700; font-size: 19px; color: var(--ink); }
+  .faq { background: var(--green-soft); }
+  .faq-layout { display: grid; grid-template-columns: 4fr 8fr; gap: 56px; align-items: start; }
+  .faq-list { background: #fff; border-radius: 12px; box-shadow: var(--shadow); overflow: hidden; }
+  details + details { border-top: 1px solid var(--line); }
+  summary { list-style: none; cursor: pointer; padding: 14px 20px; display: flex; align-items: center; gap: 16px; font: 700 16px/1.35 Exo, sans-serif; color: var(--ink); transition: background .2s; }
+  summary:hover { background: var(--green-soft); }
   summary::-webkit-details-marker { display: none; }
-  summary::after { content: ""; margin-left: auto; flex: none; width: 14px; height: 14px; background: linear-gradient(var(--ink), var(--ink)) center / 14px 2px no-repeat, linear-gradient(var(--ink), var(--ink)) center / 2px 14px no-repeat; transition: transform .25s; }
-  details[open] summary::after { transform: rotate(45deg); }
-  summary:hover { color: var(--layer-dark); }
-  .answer { padding: 0 0 26px; max-width: 64ch; }
-  .answer p + p, .answer p + ul { margin-top: 10px; }
+  summary .pm { margin-left: auto; flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--green-tint); color: var(--green-dark); display: grid; place-items: center; transition: transform .25s, background .25s, color .25s; }
+  summary .pm svg { width: 14px; height: 14px; }
+  details.is-open summary .pm { transform: rotate(45deg); background: var(--green); color: #fff; }
+  .answer { padding: 0 20px 16px; font-size: 15px; }
+  .answer p + p, .answer p + ul, .answer ul + p { margin-top: 10px; }
   .answer ul { margin: 0; padding-left: 20px; }
   .answer li { margin-bottom: 6px; }
   .answer strong { color: var(--ink); }
 
   /* Contatti */
-  .contact { background: var(--mist); }
-  .contact-layout { display: grid; grid-template-columns: 5fr 6fr; gap: 72px; align-items: start; }
-  .contact-info { margin-top: 36px; display: grid; gap: 22px; color: var(--ink); }
-  .contact-info strong { display: block; font-size: 14px; font-weight: 600; color: var(--stone); margin-bottom: 2px; }
-  .contact-info a { text-decoration: none; }
-  .contact-info a:hover { color: var(--layer-dark); }
-  .contact-info .big { font-size: 30px; font-weight: 800; letter-spacing: -.02em; }
-  form.lead-form { background: var(--paper); border-radius: 18px; padding: 36px; }
+  .contact-layout { display: grid; grid-template-columns: 5fr 7fr; gap: 48px; align-items: start; }
+  .info-card { background: var(--navy); color: rgba(255, 255, 255, .8); border-radius: var(--radius); padding: 36px; }
+  .info-card h3 { color: #fff; font-size: 24px; margin-bottom: 8px; }
+  .info-row { display: flex; gap: 14px; padding: 18px 0; border-top: 1px solid rgba(255, 255, 255, .12); }
+  .info-row:first-of-type { margin-top: 22px; }
+  .info-row svg { flex: none; width: 22px; height: 22px; color: var(--green); margin-top: 2px; }
+  .info-row strong { display: block; color: #fff; font-size: 16px; }
+  .info-row a { color: #fff; text-decoration: none; }
+  .info-row a:hover { color: var(--green); }
+  .info-row .big { font: 700 24px/1.2 Exo, sans-serif; }
+  form.lead-form { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 36px; box-shadow: var(--shadow); }
   .choice { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 22px; }
   .choice label { position: relative; display: block; cursor: pointer; }
   .choice input { position: absolute; opacity: 0; }
-  .choice span { display: block; border: 2px solid var(--line); border-radius: 10px; padding: 14px 16px; transition: border-color .2s, background .2s; }
-  .choice span b { display: block; color: var(--ink); font-size: 16px; }
-  .choice span small { font-size: 14px; }
-  .choice input:checked + span { border-color: var(--layer); background: #f2fbf4; }
-  .choice input:focus-visible + span { outline: 3px solid var(--layer); outline-offset: 2px; }
+  .choice span { display: block; border: 2px solid var(--line); border-radius: 12px; padding: 16px; transition: border-color .2s, background .2s; }
+  .choice span b { display: block; color: var(--ink); font-family: Exo, sans-serif; font-size: 16px; }
+  .choice span small { font-size: 13px; }
+  .choice input:checked + span { border-color: var(--green); background: var(--green-soft); }
+  .choice input:focus-visible + span { outline: 2px solid var(--navy); outline-offset: 2px; }
   .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .field { display: grid; gap: 6px; }
   .field.full { grid-column: 1 / -1; }
   .field label { font-size: 14px; font-weight: 600; color: var(--ink); }
-  .field input, .field textarea { font: inherit; font-size: 16px; color: var(--ink); border: 1px solid #d6d1ca; border-radius: 8px; padding: 13px 14px; background: #fff; width: 100%; }
-  .field input:focus, .field textarea:focus { outline: none; border-color: var(--layer); box-shadow: 0 0 0 3px rgba(6, 193, 46, .15); }
+  .field input, .field textarea, .field select { font: inherit; color: var(--ink); border: 1px solid #d9dedb; border-radius: 8px; padding: 13px 14px; background: #fff; width: 100%; }
+  .field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
   .field textarea { min-height: 110px; resize: vertical; }
-  .privacy { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; margin: 18px 0 22px; }
-  .privacy input { margin-top: 4px; accent-color: var(--layer); }
+  .privacy { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; margin: 18px 0 22px; }
+  .privacy input { margin-top: 3px; accent-color: var(--green); }
   form.lead-form .btn { width: 100%; }
+  .form-note { text-align: center; font-size: 13px; margin-top: 12px; }
+  .form-status { text-align: center; font-size: 15px; font-weight: 600; margin-top: 14px; color: var(--ink); }
+  .form-status.ok { color: var(--green-dark); }
+  .form-status.err { color: #b42318; }
 
   /* Footer */
-  footer { background: var(--cold-deep); color: rgba(255, 255, 255, .66); padding: 56px 0 28px; font-size: 15px; }
-  .foot { display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: flex-start; }
-  .foot-logo { background: #fff; display: inline-block; padding: 10px 14px; border-radius: 8px; }
-  .foot-logo img { height: 32px; width: auto; }
-  .foot strong { color: #fff; display: block; margin-bottom: 6px; font-weight: 600; }
+  footer { background: #12193a; color: rgba(255, 255, 255, .65); padding: 48px 0 28px; font-size: 14px; }
+  .foot { display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start; }
+  .foot-logo { background: #fff; display: inline-block; padding: 10px 14px; border-radius: 10px; }
+  .foot-logo img { height: 34px; width: auto; }
+  .foot strong { color: #fff; display: block; margin-bottom: 6px; }
   .foot a { text-decoration: none; }
-  .foot a:hover { color: var(--layer); }
-  .copy { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, .1); font-size: 13px; }
+  .foot a:hover { color: var(--green); }
+  .copy { margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, .1); font-size: 13px; }
 
-  .wa { position: fixed; right: 20px; bottom: 20px; z-index: 60; width: 56px; height: 56px; border-radius: 50%; background: #25d366; color: #fff; display: grid; place-items: center; box-shadow: 0 6px 18px rgba(0, 0, 0, .18); }
+  /* WhatsApp flottante */
+  .wa { position: fixed; right: 20px; bottom: 20px; z-index: 60; width: 58px; height: 58px; border-radius: 50%; background: #25d366; color: #fff; display: grid; place-items: center; box-shadow: 0 8px 22px rgba(37, 211, 102, .35); transition: transform .2s; }
+  .wa:hover { transform: scale(1.06); }
   .wa svg { width: 30px; height: 30px; }
-  .wa { transition: opacity .25s, transform .25s; }
-  .wa.away { opacity: 0; transform: translateY(12px); pointer-events: none; }
 
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    *, *::before, *::after { animation: none !important; transition: none !important; }
-  }
+  /* Animazioni */
+  @keyframes kenburns { from { transform: scale(1.12); } to { transform: scale(1); } }
+  @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes ring { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, .5); } 70%, 100% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); } }
+  .hero-visual { animation: rise 1s .2s cubic-bezier(.2, .7, .2, 1) both; }
+  .hero .eyebrow, .hero h1, .hero p.lead, .hero-ctas, .chips { animation: rise .8s cubic-bezier(.2, .7, .2, 1) both; }
+  .hero h1 { animation-delay: .12s; }
+  .hero p.lead { animation-delay: .28s; }
+  .hero-ctas { animation-delay: .42s; }
+  .chips { animation-delay: .56s; }
+  .wa { animation: ring 2.4s 3s infinite; }
+  .btn-primary svg:last-child:not(:first-child) { transition: transform .2s; }
+  .btn-primary:hover svg:last-child:not(:first-child) { transform: translateX(4px); }
+  .benefit .ico { transition: transform .3s, background .3s, color .3s; }
+  .benefit:hover .ico { transform: rotate(-8deg) scale(1.08); background: var(--green); color: #fff; }
+  .benefit { transition: transform .3s, box-shadow .3s; }
+  .benefit:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; } }
 
+  /* Responsive */
   @media (max-width: 1024px) {
     nav.main { display: none; }
-    .head-phone { margin-left: auto; }
-    .how, .gains-layout, .faq-layout, .contact-layout, .duo, .duo.flip { grid-template-columns: 1fr; gap: 40px; }
-    .duo.flip .duo-text { order: 0; }
-    .how-img img { aspect-ratio: 16 / 11; }
-    .steps { grid-template-columns: 1fr 1fr; row-gap: 56px; }
-    .steps::before { display: none; }
+    header.site .btn { margin-left: auto; }
+    .benefits-layout, .colors-layout, .clean-layout, .faq-layout, .contact-layout { grid-template-columns: 1fr; gap: 40px; }
+    .clean-points { grid-template-columns: 1fr 1fr; }
+    .benefits-photo img { aspect-ratio: 16 / 10; }
+    .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+    .hero-visual { justify-self: center; max-width: 560px; }
+    .hero-visual img { aspect-ratio: 1 / 1; object-position: center 10%; }
   }
-
-  /* Su telefono il muro si legge dall'alto: fuori sopra, strato, dentro sotto */
   @media (max-width: 760px) {
-    section { padding: 80px 0; }
+    section { padding: 64px 0; }
     .wrap { padding: 0 16px; }
-    body { font-size: 16px; }
-    .intro { font-size: 17px; }
-    header.site .wrap { height: 62px; gap: 14px; }
-    .logo img { height: 32px; }
-    .head-phone span { display: none; }
+    .topbar .hide-sm { display: none; }
+    header.site .wrap { height: 64px; gap: 12px; }
+    .logo img { height: 34px; }
     header.site .btn { padding: 10px 14px; font-size: 14px; }
-    .hero { min-height: calc(100svh - 62px - 150px); }
-    .hero-photo { object-position: 72% center; }
-    .hero::after { background: linear-gradient(0deg, rgba(10, 16, 40, .78) 0%, rgba(10, 16, 40, .35) 55%, rgba(10, 16, 40, .1) 100%); }
-    .hero-text { padding-top: 80px; padding-bottom: 36px; }
-    .kicker { font-size: 15px; margin-bottom: 10px; }
-    .hero h1 .mm { font-size: clamp(96px, 30vw, 140px); }
-    .bar-green .wrap { flex-wrap: wrap; gap: 14px 20px; }
-    .bar-note { display: none; }
-    .bar-phone { font-size: 21px; }
-    .bar-green .btn { margin-left: 0; width: 100%; }
-    .gain-list li { grid-template-columns: 1fr; gap: 6px; }
-    .steps { grid-template-columns: 1fr; row-gap: 36px; margin-top: 48px; }
-    .steps li { padding: 0 0 0 52px; }
-    .steps li::before { top: 0; }
-    .fields, .choice { grid-template-columns: 1fr; }
-    form.lead-form { padding: 22px; }
-    .palette { gap: 22px 8px; justify-content: space-between; }
-    .tint { width: 76px; }
-    .tint span { width: 46px; height: 46px; }
-    .tint b { font-size: 13px; }
+    header.site .btn .long { display: none; }
+    .hero { padding: 40px 0 56px; }
+    .float.f2 { left: 12px; bottom: 16px; padding: 8px 12px; font-size: 13px; }
+    .hero p.lead { font-size: 17px; }
+    .hero-ctas .btn { width: 100%; }
+    .offer-grid, .benefit-list, .fields, .choice, .clean-points { grid-template-columns: 1fr; }
+    .offer-body, form.lead-form, .info-card { padding: 24px; }
+    .palette { gap: 22px 8px; }
+    .tint span { width: 48px; height: 48px; }
+    .tint b { font-size: 12px; }
     .th-read b { font-size: 16px; }
+    .th-hint { font-size: 12px; }
+    summary { padding: 14px 16px; }
+    .answer { padding: 0 16px 16px; }
+    .benefit.wide { flex-direction: column; align-items: flex-start; }
+    .benefit.wide .ico { margin-bottom: 0; }
   }
 </style>
 </head>
 <body>
 
+<!-- Icone riutilizzate -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.4 14.2-4.2-4.2 1.4-1.4 2.8 2.8 5.8-5.8 1.4 1.4z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></g></symbol>
   <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.15-1.75-.86-2-.96-.28-.1-.48-.15-.68.15-.2.3-.77.96-.95 1.16-.17.2-.35.22-.65.07a8.2 8.2 0 0 1-2.4-1.48 9 9 0 0 1-1.66-2.07c-.17-.3 0-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.58a1.1 1.1 0 0 0-.8.38 3.36 3.36 0 0 0-1.05 2.5 5.84 5.84 0 0 0 1.22 3.1 13.37 13.37 0 0 0 5.12 4.52c.72.3 1.27.5 1.7.63a4.1 4.1 0 0 0 1.89.12 3.08 3.08 0 0 0 2.02-1.43 2.5 2.5 0 0 0 .17-1.42c-.07-.13-.27-.2-.57-.35zM12.05 21.8a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.72.97.99-3.62-.23-.37a9.82 9.82 0 1 1 8.32 4.6zM20.4 3.6A11.8 11.8 0 0 0 1.84 17.84L.17 24l6.3-1.65a11.78 11.78 0 0 0 5.63 1.43A11.8 11.8 0 0 0 20.4 3.6z"/></symbol>
 </svg>
 
+<div class="topbar">
+  <div class="wrap">
+    <a href="tel:+393273019773"><svg><use href="#i-phone"/></svg>327 3019773</a>
+    <a class="hide-sm" href="mailto:info@domunica.it"><svg><use href="#i-mail"/></svg>info@domunica.it</a>
+    <span class="push hide-sm" style="display:inline-flex;gap:8px;align-items:center"><svg><use href="#i-cal"/></svg>Si riceve su appuntamento</span>
+  </div>
+</div>
+
 <header class="site">
   <div class="wrap">
-    <a class="logo" href="#top" aria-label="DomUnica, torna all'inizio"><img src="https://domunica.it/wp-content/uploads/2023/07/Logo___Domunica.png" alt="DomUnica"></a>
+    <a class="logo" href="#top" aria-label="DomUnica"><img src="https://domunica.it/wp-content/uploads/2023/07/Logo___Domunica.png" alt="DomUnica"></a>
     <nav class="main" aria-label="Sezioni">
-      <a href="#come-funziona">Come funziona</a>
-      <a href="#inizia">Sopralluogo</a>
+      <a href="#trattamento">Il trattamento</a>
       <a href="#colori">Colori</a>
-      <a href="#cantiere">Il cantiere</a>
-      <a href="#faq">Domande</a>
+      <a href="#cantiere">Cantiere pulito</a>
+      <a href="#faq">Domande frequenti</a>
     </nav>
-    <a class="head-phone" href="tel:+393273019773" aria-label="Chiama 327 3019773"><svg><use href="#i-phone"/></svg><span>327 3019773</span></a>
-    <a class="btn btn-primary" href="#contatti">Prenota il sopralluogo</a>
+    <a class="btn btn-primary" href="#contatti"><svg><use href="#i-cal"/></svg><span>Sopralluogo<span class="long"> gratuito</span></span></a>
   </div>
 </header>
 
 <main id="top">
 
-  <!-- HERO: come il post social, foto a tutto schermo e barra verde -->
-  <section class="hero" id="hero">
-    <!-- Segnaposto: sostituire con la foto della donna alla finestra senza scritte (16:9, almeno 2400 px) -->
-    <img class="hero-photo" src="img/parete-2mm-microsfere.webp" alt="" aria-hidden="true">
-    <div class="wrap hero-text">
-      <p class="kicker">Ristrutturazione e trattamento termico interno a Roma</p>
-      <h1><span class="mm">2 mm</span> È tutto ciò che <b>separa</b> il freddo fuori dal caldo dentro.</h1>
-    </div>
-  </section>
-  <div class="bar-green">
-    <div class="wrap">
-      <a class="bar-phone" href="tel:+393273019773"><span class="ring"><svg><use href="#i-phone"/></svg></span>327 3019773</a>
-      <p class="bar-note">Sopralluogo gratuito, si riceve su appuntamento</p>
-      <a class="btn btn-white" href="#contatti">Prenota il sopralluogo gratuito</a>
-    </div>
-  </div>
-
-  <!-- COME FUNZIONA -->
-  <section id="come-funziona">
-    <div class="wrap how">
-      <figure class="how-img" style="margin:0">
-        <img src="img/parete-2mm-microsfere.webp" width="1080" height="1350" loading="lazy" alt="Sezione di una parete: tra il muro e la stanza lo strato DomUnica da 2 mm, con il dettaglio delle microsfere ceramiche">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow"><b>DomUnica</b> Ristrutturazione e trattamento interno · Roma</div>
+        <h1><span class="big">2 mm.</span> È tutto ciò che <b>separa</b> il freddo fuori dal caldo dentro.</h1>
+        <p class="lead">Ristrutturiamo casa tua e finiamo le pareti interne con un rasante nanotecnologico di appena <strong>2 millimetri</strong>, con microsfere ceramiche cave: niente pannelli ed è già la finitura, nel colore che scegli.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#contatti"><svg><use href="#i-cal"/></svg>Prenota il sopralluogo gratuito</a>
+          <a class="btn btn-outline" href="tel:+393273019773"><svg><use href="#i-phone"/></svg>Chiama 327 3019773</a>
+        </div>
+        <div class="chips">
+          <span class="chip"><svg><use href="#i-check"/></svg>Sopralluogo gratuito</span>
+          <span class="chip"><svg><use href="#i-check"/></svg>Durata minima 25 anni</span>
+          <span class="chip"><svg><use href="#i-check"/></svg>In qualsiasi colore</span>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <div class="frame"><img src="img/apertura-finestra.webp" width="1122" height="1402" alt="Donna sul divano con una tazza, accanto a una finestra con la neve fuori; nel muro lo strato DomUnica con lo zoom sulle microsfere ceramiche"></div>
+        <div class="float f2"><span class="dot"><svg><use href="#i-shield"/></svg></span>Microsfere ceramiche</div>
       </figure>
-      <div class="how-text">
-        <h2>Dentro quei 2 millimetri</h2>
-        <p>Il trattamento contiene milioni di microsfere ceramiche cave. Funzionano come piccoli specchi: il caldo dei termosifoni resta nella stanza, l'afa d'estate resta fuori, e la parete smette di essere fredda al tatto.</p>
-        <p>Si applica direttamente sulle pareti interne durante la ristrutturazione, senza pannelli e senza spostare prese, battiscopa o radiatori.</p>
-        <figure class="scale">
-          <div class="scale-row"><b>Cappotto tradizionale in pannelli, circa 12 cm</b><div class="bar panel" role="img" aria-label="Barra lunga: 12 centimetri"></div></div>
-          <div class="scale-row"><b>Trattamento DomUnica, 2 mm</b><div class="bar thin" role="img" aria-label="Barra sottilissima: 2 millimetri"></div></div>
-          <figcaption>Spessori disegnati in scala. Su un appartamento di 100 m² recuperi fino a 4 m² di superficie rispetto ai pannelli.</figcaption>
-        </figure>
-      </div>
     </div>
   </section>
 
-  <!-- COME INIZIARE -->
-  <section id="inizia" style="padding-top:0">
+  <!-- OFFERTA -->
+  <section id="inizia">
     <div class="wrap">
-      <div class="start-head">
-        <h2>Si comincia da casa tua</h2>
-        <p class="intro">Veniamo a vedere gli ambienti da ristrutturare. Se vuoi sapere esattamente dove la casa perde calore, aggiungiamo l'analisi con termocamera.</p>
+      <div class="head center reveal">
+        <div class="eyebrow">Come iniziare</div>
+        <h2>Due modi per conoscere la tua casa</h2>
+        <p class="lead">Partiamo sempre da un sopralluogo, senza impegno. Se vuoi una mappa precisa di dispersioni e ponti termici, aggiungiamo l'analisi con termocamera.</p>
       </div>
-
-      <div class="duo">
-        <div class="duo-photo" style="background-image:url('img/sopralluogo.webp')" role="img" aria-label="Il tecnico DomUnica con una coppia durante il sopralluogo in soggiorno"></div>
-        <div class="duo-text">
-          <h3>Sopralluogo a domicilio</h3>
-          <span class="price">Gratuito</span>
-          <p>Un tecnico viene da te, guarda pareti e ambienti, ascolta cosa vuoi rinnovare e ti consegna una proposta su misura.</p>
-          <ul class="ticks">
-            <li>Valutazione di pareti, umidità e punti critici</li>
-            <li>Consigli su lavori e colori</li>
-            <li>Preventivo chiaro, senza impegno</li>
-          </ul>
-          <a class="btn btn-primary" href="#contatti" data-pick="sopralluogo">Prenota il sopralluogo</a>
-        </div>
-      </div>
-
-      <div class="duo flip">
-        <div class="duo-text">
-          <h3>Analisi con termocamera</h3>
-          <p>Fotografiamo la temperatura delle pareti, stanza per stanza, per trovare dispersioni, ponti termici e zone a rischio di condensa e muffa.</p>
-          <p class="try">Prova sulla termografia di esempio: <b class="th-verb">muovi il cursore</b> e leggi la temperatura del muro in quel punto.</p>
-          <ul class="ticks">
-            <li>Mappa termica di ogni stanza</li>
-            <li>Individuazione dei muri freddi</li>
-            <li>Intervento progettato al millimetro</li>
-          </ul>
-          <a class="btn btn-outline" href="#contatti" data-pick="termocamera">Richiedi l'analisi termica</a>
-        </div>
-        <div class="thermo" id="thermo">
-          <canvas width="480" height="270" role="img" aria-label="Termografia di esempio di una parete: angoli freddi in viola, parete in arancio, termosifone in bianco"></canvas>
-          <div class="th-cursor" aria-hidden="true"><i></i><div class="th-read"><b>–</b><span></span></div></div>
-          <div class="th-scale" aria-hidden="true"><span>26°</span><i></i><span>10°</span></div>
-        </div>
+      <div class="offer-grid">
+        <article class="offer reveal">
+          <div class="offer-img" style="background-image:url('img/sopralluogo.webp')"><span class="tag free">Gratuito</span></div>
+          <div class="offer-body">
+            <h3>Sopralluogo a domicilio</h3>
+            <p>Un nostro tecnico viene a vedere gli ambienti da ristrutturare e da trattare, ascolta le tue esigenze e ti consegna una proposta su misura.</p>
+            <ul>
+              <li><svg><use href="#i-check"/></svg>Valutazione di pareti, umidità e punti critici</li>
+              <li><svg><use href="#i-check"/></svg>Consigli su lavori e colori</li>
+              <li><svg><use href="#i-check"/></svg>Preventivo chiaro, senza impegno</li>
+            </ul>
+            <a class="btn btn-primary" href="#contatti" data-pick="sopralluogo">Prenota il sopralluogo <svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="offer reveal">
+          <div class="offer-img thermo" id="thermo">
+            <canvas width="480" height="270" role="img" aria-label="Termografia di esempio di una parete: angoli freddi in viola, parete in arancio, termosifone in bianco"></canvas>
+            <div class="th-cursor" aria-hidden="true"><i></i><div class="th-read"><b>–</b><span></span></div></div>
+            <div class="th-scale" aria-hidden="true"><span>26°</span><i></i><span>10°</span></div>
+          </div>
+          <div class="offer-body">
+            <span class="th-hint"><svg><use href="#i-info"/></svg><span>Esempio interattivo: <b class="th-verb">muovi il cursore</b> sulla termografia</span></span>
+            <h3>Analisi termica con termocamera</h3>
+            <p>Fotografiamo la temperatura delle tue pareti per individuare con precisione dispersioni, ponti termici e zone a rischio di condensa e muffa.</p>
+            <ul>
+              <li><svg><use href="#i-check"/></svg>Mappa termica di ogni stanza</li>
+              <li><svg><use href="#i-check"/></svg>Individuazione dei muri freddi</li>
+              <li><svg><use href="#i-check"/></svg>Intervento progettato al millimetro</li>
+            </ul>
+            <a class="btn btn-outline" href="#contatti" data-pick="termocamera">Richiedi l'analisi termica <svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- COSA CAMBIA -->
-  <section class="gains" id="vantaggi">
-    <div class="wrap gains-layout">
-      <figure class="gains-img" style="margin:0">
-        <img src="img/applicazione-trattamento.jpg" width="1080" height="890" loading="lazy" alt="Tecnico DomUnica applica il trattamento sulla parete mentre la famiglia resta in casa">
-      </figure>
+  <!-- BENEFICI -->
+  <section class="benefits" id="trattamento">
+    <div class="wrap benefits-layout">
+      <div class="benefits-photo reveal">
+        <img src="img/applicazione-trattamento.jpg" alt="Tecnico DomUnica applica il trattamento sulla parete mentre la famiglia resta in casa">
+      </div>
       <div>
-        <h2>Cosa cambia nella tua casa</h2>
-        <ul class="gain-list">
-          <li><h3>Caldo d'inverno, fresco d'estate</h3><p>Il riscaldamento resta nelle stanze e l'afa estiva non entra: più comfort e meno consumi.</p></li>
-          <li><h3>Niente più muffa</h3><p>Sparisce il muro freddo: senza superfici fredde la condensa non si forma e la muffa non attecchisce.</p></li>
-          <li><h3>Protezione dal fuoco</h3><p>Il prodotto è ignifugo: una protezione in più per le pareti di casa.</p></li>
-          <li><h3>Aria più sana</h3><p>È altamente traspirante: le pareti respirano e gli ambienti restano salubri.</p></li>
-          <li><h3>Completamente green</h3><p>Atossico e rispettoso dell'ambiente, sicuro per bambini e animali.</p></li>
-        </ul>
+        <div class="reveal">
+          <div class="eyebrow">Il trattamento interno</div>
+          <h2>Uno strato sottile, tre vantaggi concreti</h2>
+          <p class="lead">Un rasante con microsfere ceramiche cave, applicato sulle pareti durante la ristrutturazione.</p>
+        </div>
+        <div class="benefit-list">
+          <div class="benefit reveal">
+            <div class="ico"><svg><use href="#i-check"/></svg></div>
+            <h3>Niente pannelli</h3>
+            <p>Le stanze restano come sono: su 100 m² recuperi fino a 4 m² rispetto ai pannelli classici.</p>
+          </div>
+          <div class="benefit reveal">
+            <div class="ico"><svg><use href="#i-check"/></svg></div>
+            <h3>È già la finitura</h3>
+            <p>Nessuna pittura da stendere dopo: pareti pronte, nel colore scelto.</p>
+          </div>
+          <div class="benefit wide reveal">
+            <div class="ico"><svg><use href="#i-check"/></svg></div>
+            <div>
+              <h3>Un solo cantiere</h3>
+              <p>Ristrutturazione e trattamento nello stesso intervento, senza dover coordinare più imprese.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- COLORI -->
   <section id="colori">
-    <div class="wrap">
-      <div class="colors-head">
-        <h2>Il trattamento è già la finitura</h2>
-        <p>Si realizza nel colore che scegli, così le pareti sono pronte appena finito il lavoro: nessuna pittura da stendere dopo.</p>
+    <div class="wrap colors-layout">
+      <div class="colors-intro reveal">
+        <div class="eyebrow">Finitura e colori</div>
+        <h2>Il trattamento è già la finitura. Scegli il colore.</h2>
+        <p class="lead">Il prodotto si realizza in qualsiasi colore: nessuna pittura da stendere dopo, pareti pronte e uniformi.</p>
+        <div class="notice">
+          <svg><use href="#i-info"/></svg>
+          <p><strong>Consigliamo tinte chiare</strong>, che valorizzano la luce degli ambienti. Sul trattamento finito non va posato nient'altro: niente pittura, carta da parati o rivestimenti.</p>
+        </div>
       </div>
-      <div class="palette" role="list" aria-label="Esempi di colori">
-        <div class="tint" role="listitem"><span style="--c:#f4f1ea"></span><b>Bianco caldo</b></div>
-        <div class="tint" role="listitem"><span style="--c:#e4d7c3"></span><b>Sabbia</b></div>
-        <div class="tint" role="listitem"><span style="--c:#dedcd5"></span><b>Grigio perla</b></div>
-        <div class="tint" role="listitem"><span style="--c:#f1e5c0"></span><b>Vaniglia</b></div>
-        <div class="tint" role="listitem"><span style="--c:#bfdbe3"></span><b>Azzurro polvere</b></div>
-        <div class="tint" role="listitem"><span style="--c:#c9dccb"></span><b>Verde salvia</b></div>
-        <div class="tint" role="listitem"><span style="--c:#e8c9c4"></span><b>Rosa cipria</b></div>
-        <div class="tint any" role="listitem"><span></span><b>Qualsiasi altro colore</b></div>
+      <div class="palette">
+        <div class="tint reveal"><span style="--c:#f4f1ea"></span><b>Bianco caldo</b></div>
+        <div class="tint reveal"><span style="--c:#e4d7c3"></span><b>Sabbia</b></div>
+        <div class="tint reveal"><span style="--c:#dedcd5"></span><b>Grigio perla</b></div>
+        <div class="tint reveal"><span style="--c:#f1e5c0"></span><b>Vaniglia</b></div>
+        <div class="tint reveal"><span style="--c:#bfdbe3"></span><b>Azzurro polvere</b></div>
+        <div class="tint reveal"><span style="--c:#c9dccb"></span><b>Verde salvia</b></div>
+        <div class="tint reveal"><span style="--c:#e8c9c4"></span><b>Rosa cipria</b></div>
+        <div class="tint any reveal"><span></span><b>Qualsiasi altro colore</b></div>
       </div>
-      <p class="color-note">Consigliamo tinte chiare, che valorizzano la luce degli ambienti. Sul trattamento finito non va posato nient'altro: niente pittura, carta da parati o rivestimenti.</p>
     </div>
   </section>
 
-  <!-- PERCORSO -->
-  <section class="path" id="cantiere">
+  <!-- CANTIERE PULITO -->
+  <section class="clean" id="cantiere">
     <div class="wrap">
-      <h2>Un solo cantiere, dalla prima visita alla casa pulita</h2>
-      <p class="intro">Ristrutturazione e trattamento delle pareti nello stesso intervento, con un cantiere ordinato dall'inizio alla fine.</p>
-      <ol class="steps">
-        <li><h3>Sopralluogo</h3><p>Vediamo casa insieme e raccogliamo le tue esigenze di ristrutturazione.</p><span class="when">Gratuito</span></li>
-        <li><h3>Analisi termica</h3><p>Con la termocamera mappiamo dispersioni e muri freddi, stanza per stanza.</p><span class="when">Su richiesta</span></li>
-        <li><h3>Lavori e trattamento</h3><p>Proteggiamo pavimenti, infissi e arredi, ristrutturiamo e applichiamo i 2 mm sulle pareti nel colore scelto.</p></li>
-        <li><h3>Pulizia e consegna</h3><p>Rimuoviamo protezioni e residui, puliamo gli ambienti e ti riconsegniamo la casa pronta da vivere.</p></li>
-      </ol>
+      <div class="head reveal">
+        <div class="eyebrow">Ristrutturazione e trattamento interno</div>
+        <h2>Un solo cantiere: rinnovi casa, tratti le pareti e la ritrovi pulita</h2>
+        <p class="lead">Ristrutturazione e trattamento delle pareti nello stesso intervento, con un cantiere ordinato dall'inizio alla fine. E quando abbiamo finito, puliamo noi.</p>
+      </div>
+      <div class="clean-points">
+        <div class="clean-point reveal"><span class="n">1</span><h3>Sopralluogo</h3><p>Vediamo casa insieme e raccogliamo le tue esigenze di ristrutturazione.</p><span class="pill">Gratuito</span></div>
+        <div class="clean-point reveal"><span class="n">2</span><h3>Analisi termica</h3><p>Con la termocamera mappiamo dispersioni e muri freddi, stanza per stanza.</p><span class="pill">Su richiesta</span></div>
+        <div class="clean-point reveal"><span class="n">3</span><h3>Lavori e trattamento</h3><p>Copriamo pavimenti, infissi e arredi, poi nello stesso cantiere rinnoviamo gli ambienti e applichiamo i 2 mm sulle pareti: niente pannelli, nessun ingombro.</p></div>
+        <div class="clean-point reveal"><span class="n">4</span><h3>Pulizia e consegna</h3><p>Rimuoviamo protezioni e residui e puliamo gli ambienti. Le pareti sono già finite nel colore scelto: torni a viverci subito.</p></div>
+      </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq">
+  <section class="faq" id="faq">
     <div class="wrap faq-layout">
-      <div class="faq-side">
+      <div class="reveal">
+        <div class="eyebrow">FAQ</div>
         <h2>Domande frequenti</h2>
-        <p>Non trovi la risposta? Chiamaci al <a class="link" href="tel:+393273019773">327 3019773</a>.</p>
+        <p class="lead">Non trovi la risposta che cerchi? Chiamaci, ti rispondiamo volentieri.</p>
+        <a class="btn btn-primary" style="margin-top:26px" href="tel:+393273019773"><svg><use href="#i-phone"/></svg>327 3019773</a>
       </div>
-      <div class="faq-list">
-        <details open>
-          <summary>Come fanno 2 mm a isolare una parete?</summary>
+      <div class="faq-list reveal">
+        <details>
+          <summary>Come funzionano 2 mm?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
           <div class="answer">
-            <p>Per isolare non serve spessore, serve <strong>riflessione</strong>. Le microsfere ceramiche cave contenute nel prodotto respingono il calore invece di lasciarlo passare attraverso il muro.</p>
-            <p>D'inverno il caldo dei termosifoni resta nella stanza e d'estate l'afa resta fuori. La parete non è più fredda al tatto e gli ambienti si scaldano più in fretta.</p>
+            <p>È un <strong>rasante di finitura</strong> con microsfere ceramiche cave. Si applica sulle pareti interne durante la ristrutturazione, in uno spessore di circa 2 mm, e resta a vista: è già la parete finita.</p>
           </div>
         </details>
         <details>
-          <summary>Quanto dura il prodotto?</summary>
-          <div class="answer"><p>Il trattamento ha una <strong>durata minima di 25 anni</strong>. La ceramica delle microsfere è un materiale inorganico che non si degrada nel tempo.</p></div>
-        </details>
-        <details>
-          <summary>È un prodotto tossico?</summary>
-          <div class="answer"><p><strong>No.</strong> È un prodotto atossico a base acqua, senza odori fastidiosi: puoi viverci in sicurezza, anche con bambini e animali.</p></div>
-        </details>
-        <details>
-          <summary>Oltre a riflettere il calore, cos'altro fa?</summary>
+          <summary>Quanto dura il prodotto?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
           <div class="answer">
-            <ul>
-              <li><strong>Elimina il muro freddo</strong>, e con lui condense e muffe.</li>
-              <li><strong>Protegge dal fuoco</strong>: è un prodotto ignifugo.</li>
-              <li><strong>È altamente traspirante</strong>: lascia respirare le pareti e crea ambienti sani.</li>
-            </ul>
+            <p>Il trattamento ha una <strong>durata minima di 25 anni</strong>.</p>
           </div>
         </details>
         <details>
-          <summary>È un prodotto green?</summary>
-          <div class="answer"><p>Sì, è un <strong>prodotto completamente green</strong>, rispettoso dell'ambiente e di chi abita la casa. In più, trattenendo il calore, riduce i consumi di riscaldamento e raffrescamento.</p></div>
+          <summary>È un prodotto tossico?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="answer">
+            <p><strong>No.</strong> È atossico e a base acqua. È anche <strong>ignifugo</strong> e <strong>traspirante</strong>.</p>
+          </div>
         </details>
         <details>
-          <summary>Posso pitturare o mettere qualcosa sopra?</summary>
-          <div class="answer"><p>No: il trattamento è già la <strong>finitura finale</strong> e sopra non va posato nulla. In compenso si realizza in <strong>qualsiasi colore</strong>; consigliamo tinte chiare, che rendono gli ambienti più luminosi.</p></div>
+          <summary>È un prodotto green?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="answer">
+            <p>È <strong>a base acqua</strong> e senza VOC.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Perdo spazio in casa?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="answer">
+            <p>Praticamente no, perché non ci sono pannelli: su un appartamento di 100 m² recuperi <strong>fino a 4 m²</strong> rispetto ai pannelli classici.</p>
+          </div>
+        </details>
+        <details>
+          <summary>L'analisi con termocamera è obbligatoria?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="answer">
+            <p>No. Il sopralluogo è gratuito, l'analisi è <strong>su richiesta</strong>: la facciamo se vuoi una mappa precisa di dispersioni, ponti termici e muri freddi della casa.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Posso pitturare o mettere qualcosa sopra?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+          <div class="answer">
+            <p>No: il trattamento è già la <strong>finitura finale</strong> e sopra non va posato nulla. In compenso si realizza in <strong>qualsiasi colore</strong>; consigliamo tinte chiare, che rendono gli ambienti più luminosi.</p>
+          </div>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- CONTATTI -->
-  <section class="contact" id="contatti">
-    <div class="wrap contact-layout">
-      <div>
-        <h2>Prenota il sopralluogo gratuito</h2>
-        <p class="intro">Lasciaci nome e telefono: ti richiamiamo per fissare l'appuntamento.</p>
-        <div class="contact-info">
-          <div><strong>Telefono</strong><a class="big" href="tel:+393273019773">327 3019773</a></div>
-          <div><strong>Sede legale</strong><a href="https://www.google.com/maps/search/?api=1&query=Via+XX+Settembre+118+00187+Roma" target="_blank" rel="noopener">Via XX Settembre 118, 00187 Roma</a></div>
-          <div><strong>Orari</strong>Si riceve su appuntamento</div>
-          <div><strong>Email</strong><a href="mailto:info@domunica.it">info@domunica.it</a></div>
-        </div>
-      </div>
+  <!-- LOGHI -->
+  <section class="logos" aria-label="Si fidano di noi">
+    <div class="wrap">
+      <p class="logos-title">Si fidano di noi</p>
+      <ul class="logos-list">
+        <li class="reveal"><img src="img/loghi/heineken.png" width="328" height="164" loading="lazy" alt="Heineken"></li>
+        <li class="reveal"><img src="img/loghi/opel.png" width="328" height="164" loading="lazy" alt="Opel"></li>
+        <li class="reveal"><img src="img/loghi/chevron.png" width="327" height="164" loading="lazy" alt="Chevron"></li>
+        <li class="reveal"><img src="img/loghi/veolia.png" width="327" height="164" loading="lazy" alt="Veolia"></li>
+        <li class="reveal"><img src="img/loghi/linde.png" width="328" height="164" loading="lazy" alt="Linde"></li>
+        <li class="reveal"><img src="img/loghi/orlen.png" width="328" height="164" loading="lazy" alt="Orlen"></li>
+        <li class="reveal"><img src="img/loghi/mol.png" width="329" height="164" loading="lazy" alt="MOL"></li>
+        <li class="reveal"><img src="img/loghi/agrofert.png" width="327" height="164" loading="lazy" alt="Agrofert"></li>
+      </ul>
+    </div>
+  </section>
 
-      <form class="lead-form" id="lead-form" novalidate>
-        <div class="choice" role="radiogroup" aria-label="Tipo di richiesta">
-          <label><input type="radio" name="tipo" value="Sopralluogo gratuito" checked><span><b>Sopralluogo</b><small>Gratuito</small></span></label>
-          <label><input type="radio" name="tipo" value="Analisi termica con termocamera"><span><b>Analisi con termocamera</b><small>Mappa termica della casa</small></span></label>
-        </div>
-        <div class="fields">
-          <div class="field"><label for="f-nome">Nome e cognome</label><input id="f-nome" name="nome" autocomplete="name" required></div>
-          <div class="field"><label for="f-tel">Telefono</label><input id="f-tel" name="telefono" type="tel" autocomplete="tel" required></div>
-          <div class="field full"><label for="f-zona">Zona o quartiere</label><input id="f-zona" name="zona" placeholder="Es. Prati, Roma"></div>
-          <div class="field full"><label for="f-msg">Cosa vuoi ristrutturare?</label><textarea id="f-msg" name="messaggio" placeholder="Es. bagno e camera, muffa sulla parete nord"></textarea></div>
-        </div>
-        <label class="privacy"><input type="checkbox" name="privacy" required> <span>Acconsento al trattamento dei dati personali per essere ricontattato.</span></label>
-        <button class="btn btn-primary" type="submit"><svg><use href="#i-wa"/></svg>Invia la richiesta su WhatsApp</button>
-      </form>
+  <!-- CONTATTI -->
+  <section id="contatti">
+    <div class="wrap">
+      <div class="head center reveal">
+        <div class="eyebrow">Contatti</div>
+        <h2>Prenota il tuo sopralluogo gratuito</h2>
+        <p class="lead">Lasciaci i tuoi dati: ti richiamiamo per fissare un appuntamento.</p>
+      </div>
+      <div class="contact-layout">
+        <aside class="info-card reveal">
+          <h3>DomUnica</h3>
+          <p>Ristrutturazione e trattamento interno delle pareti a Roma.</p>
+          <div class="info-row"><svg><use href="#i-phone"/></svg><div><strong>Telefono</strong><a class="big" href="tel:+393273019773">327 3019773</a></div></div>
+          <div class="info-row"><svg><use href="#i-pin"/></svg><div><strong>Sede legale</strong><a href="https://www.google.com/maps/search/?api=1&query=Via+XX+Settembre+118+00187+Roma" target="_blank" rel="noopener">Via XX Settembre 118<br>00187 Roma</a></div></div>
+          <div class="info-row"><svg><use href="#i-cal"/></svg><div><strong>Si riceve su appuntamento</strong>Chiamaci o scrivici per fissare un incontro.</div></div>
+          <div class="info-row"><svg><use href="#i-mail"/></svg><div><strong>Email</strong><a href="mailto:info@domunica.it">info@domunica.it</a></div></div>
+        </aside>
+
+        <!-- data-key: chiave di accesso dell'account Web3Forms. Finché è vuota il form non invia e mostra il telefono. -->
+        <form class="lead-form reveal" id="lead-form" data-key="" novalidate>
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+          <div class="choice" role="radiogroup" aria-label="Tipo di richiesta">
+            <label><input type="radio" name="tipo" value="Sopralluogo gratuito" checked><span><b>Sopralluogo</b><small>Gratuito</small></span></label>
+            <label><input type="radio" name="tipo" value="Analisi termica con termocamera"><span><b>Analisi con termocamera</b><small>Mappa termica della casa</small></span></label>
+          </div>
+          <div class="fields">
+            <div class="field"><label for="f-nome">Nome e cognome</label><input id="f-nome" name="nome" autocomplete="name" required></div>
+            <div class="field"><label for="f-tel">Telefono</label><input id="f-tel" name="telefono" type="tel" autocomplete="tel" required></div>
+            <div class="field full"><label for="f-zona">Zona / quartiere</label><input id="f-zona" name="zona" placeholder="Es. Prati, Roma"></div>
+            <div class="field full"><label for="f-msg">Di cosa hai bisogno?</label><textarea id="f-msg" name="messaggio" placeholder="Es. ristrutturazione bagno e camera, muffa sulla parete nord…"></textarea></div>
+          </div>
+          <label class="privacy"><input type="checkbox" name="privacy" required> <span>Acconsento al trattamento dei dati personali per essere ricontattato.</span></label>
+          <button class="btn btn-primary" type="submit"><svg><use href="#i-cal"/></svg>Invia la richiesta</button>
+          <p class="form-status" role="status" hidden></p>
+          <p class="form-note">Oppure chiamaci al <a href="tel:+393273019773">327 3019773</a></p>
+        </form>
+      </div>
     </div>
   </section>
 </main>
@@ -522,13 +620,67 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Animazione all'ingresso
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      el.classList.add('in');
+      io.unobserve(el);
+      // A ingresso finito tolgo ritardo e classi, così gli hover restano reattivi
+      el.addEventListener('transitionend', () => { el.classList.remove('reveal', 'in'); el.style.transitionDelay = ''; }, { once: true });
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach((el) => {
+    // Gli elementi affiancati entrano uno dopo l'altro
+    const siblings = [...el.parentElement.children].filter((c) => c.classList.contains('reveal'));
+    if (siblings.length > 1) el.style.transitionDelay = `${siblings.indexOf(el) * 90}ms`;
+    io.observe(el);
+  });
+
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Il pulsante WhatsApp resta nascosto finché si vede la barra verde, che ha già telefono e prenotazione
-  const wa = document.querySelector('.wa');
-  new IntersectionObserver(([e]) => wa.classList.toggle('away', e.isIntersecting)).observe(document.querySelector('.bar-green'));
+  // Domande frequenti: una sola aperta alla volta, apertura e chiusura animate
+  const faqItems = [...document.querySelectorAll('.faq-list details')];
+  const faqRunning = new WeakMap();
+  const slideFaq = (item, open) => {
+    const answer = item.querySelector('.answer');
+    faqRunning.get(item)?.cancel();
+    item.classList.toggle('is-open', open);
+    if (reduced) { item.open = open; return; }
+    item.open = true;
+    const height = `${answer.offsetHeight}px`;
+    const pad = getComputedStyle(answer).paddingBottom;
+    answer.style.overflow = 'hidden';
+    const shut = { height: '0px', paddingBottom: '0px', opacity: 0 };
+    const full = { height, paddingBottom: pad, opacity: 1 };
+    const anim = answer.animate(open ? [shut, full] : [full, shut], { duration: 260, easing: 'ease' });
+    faqRunning.set(item, anim);
+    // Se nel frattempo è partita un'altra animazione, questa viene annullata e non chiude nulla
+    anim.finished.then(() => {
+      if (faqRunning.get(item) !== anim) return;
+      answer.style.overflow = '';
+      if (!open) item.open = false;
+    }, () => {});
+  };
+  faqItems.forEach((item) => item.querySelector('summary').addEventListener('click', (e) => {
+    e.preventDefault();
+    const open = !item.classList.contains('is-open');
+    faqItems.forEach((other) => { if (other !== item && other.classList.contains('is-open')) slideFaq(other, false); });
+    slideFaq(item, open);
+  }));
 
-  // I pulsanti preselezionano il tipo di richiesta nel form
+  // Le tappe del cantiere si accendono quando la sezione entra in vista
+  const cleanSteps = document.querySelector('.clean-points');
+  const stepsObserver = new IntersectionObserver(([e]) => {
+    if (!e.isIntersecting) return;
+    cleanSteps.classList.add('play');
+    stepsObserver.disconnect();
+  }, { threshold: 0.25 });
+  stepsObserver.observe(cleanSteps);
+
+  // I bottoni delle card preselezionano il tipo di richiesta
   document.querySelectorAll('[data-pick]').forEach((a) => a.addEventListener('click', () => {
     const value = a.dataset.pick === 'termocamera' ? 'Analisi termica con termocamera' : 'Sopralluogo gratuito';
     document.querySelector(`input[name="tipo"][value="${value}"]`).checked = true;
@@ -586,7 +738,7 @@
       active = true; thermo.classList.add('live'); place(...at(e));
     }));
     thermo.addEventListener('pointerleave', () => { active = false; thermo.classList.remove('live'); });
-    if (matchMedia('(hover: none)').matches) document.querySelector('.th-verb').textContent = 'tocca la parete';
+    if (matchMedia('(hover: none)').matches) document.querySelector('.th-verb').textContent = 'tocca';
 
     // Finché nessuno la usa, il mirino fa un giro dei punti più interessanti
     const tour = [[.06, .09], [.45, .45], [.42, .86], [.77, .38], [.05, .55]];
@@ -595,20 +747,45 @@
     if (!reduced) setInterval(() => { if (active) return; step = (step + 1) % tour.length; place(...tour[step]); }, 2400);
   }
 
-  // Il form compone un messaggio WhatsApp
-  document.getElementById('lead-form').addEventListener('submit', (e) => {
+  // Il form invia la richiesta via email con Web3Forms
+  document.getElementById('lead-form').addEventListener('submit', async (e) => {
     e.preventDefault();
     const f = e.target;
     if (!f.reportValidity()) return;
+    const status = f.querySelector('.form-status');
+    const button = f.querySelector('button[type="submit"]');
+    const show = (text, kind) => { status.textContent = text; status.className = `form-status ${kind}`; status.hidden = false; };
+    const failed = 'Invio non riuscito. Chiamaci al 327 3019773.';
+    if (!f.dataset.key) return show(failed, 'err');
+
     const d = new FormData(f);
-    const lines = [
-      `Richiesta: ${d.get('tipo')}`,
-      `Nome: ${d.get('nome')}`,
-      `Telefono: ${d.get('telefono')}`,
-      d.get('zona') && `Zona: ${d.get('zona')}`,
-      d.get('messaggio') && `Note: ${d.get('messaggio')}`,
-    ].filter(Boolean);
-    window.open(`https://wa.me/393273019773?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
+    button.disabled = true;
+    show('Invio in corso…', '');
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: f.dataset.key,
+          subject: `Nuova richiesta dalla landing: ${d.get('tipo')}`,
+          from_name: 'Landing DomUnica',
+          botcheck: d.get('botcheck') ? true : '',
+          Richiesta: d.get('tipo'),
+          Nome: d.get('nome'),
+          Telefono: d.get('telefono'),
+          Zona: d.get('zona'),
+          Note: d.get('messaggio'),
+        }),
+      });
+      const out = await res.json();
+      if (!out.success) throw new Error(out.message);
+      f.reset();
+      show('Richiesta inviata: ti richiamiamo per fissare un appuntamento.', 'ok');
+    } catch {
+      show(failed, 'err');
+    } finally {
+      button.disabled = false;
+    }
   });
 </script>
 </body>
